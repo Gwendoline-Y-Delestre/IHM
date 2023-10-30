@@ -14,3 +14,8 @@
 #group {
   height: 91vh;
 }
+
+.add button {
+    margin: 5px;
+    float: right;
+}
