@@ -1,0 +1,16 @@
+#screen {
+  height: 80vh;
+}
+#rsbutton li {
+  display: inline;
+}
+
+#feed {
+  width: 75%;
+  height: 91vh;
+  overflow-x: auto;
+}
+
+#group {
+  height: 91vh;
+}
