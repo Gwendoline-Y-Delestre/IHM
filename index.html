@@ -29,24 +29,42 @@
             >
               <i class="tiny material-icons">message</i></a
             >
-            
           </li>
           <li>
-                        <!-- Modal Trigger -->
-            <a class="waves-effect waves-light btn modal-trigger blue darken-2" href="#modal1"><i class="material-icons">person_add</i></a>
+            <!-- Modal Trigger -->
+            <a
+              class="waves-effect waves-light btn modal-trigger blue darken-2"
+              href="#modal1"
+              ><i class="material-icons">person_add</i></a
+            >
 
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
               <div class="modal-content blue-text text-darken-2">
                 <h4 class="center-align">Rechercher des amis</h4>
-                <div class="add valign-wrapper center-align"><img
-                  src="images/pp1.jpeg"
-                  alt=""
-                  class="circle responsive-img"
-                />Jean Bon<button class="waves-effect waves-light btn blue darken-2" onclick="M.toast({html: 'Demande envoyée'})">Ajouter</button></div>
+                <div>
+                  <div class="add valign-wrapper searchF">
+                    <img
+                      src="images/pp1.jpeg"
+                      alt=""
+                      class="circle searchF"
+                      height="70px"
+                    />
+                    <p class="searchF">Jean Bon</p>
+                    <button
+                      id="add"
+                      class="waves-effect waves-light btn blue darken-2 searchF"
+                      onclick="M.toast({html: 'Demande envoyée'})"
+                    >
+                      Ajouter
+                    </button>
+                  </div>
+                </div>
               </div>
               <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+                <a class="modal-close waves-effect waves-green btn-flat"
+                  >Fermer</a
+                >
               </div>
             </div>
           </li>
@@ -55,8 +73,8 @@
               href="mobile.html"
               class="waves-effect waves-light btn blue darken-2"
             >
-              <i class="material-icons">more_vert</i></a
-            >
+              <img src="images/avion.png" class="material-icons"
+            /></a>
           </li>
         </ul>
         <ul class="right hide-on-med-and-down">
@@ -71,26 +89,9 @@
         </ul>
       </div>
     </nav>
-    
-    
-    <div id="screen" class="row">
-      <div id="feed" class="col s9 green lighten-4">
-        <!-- <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-          ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
-          massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci
-          nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl
-          sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
-          consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-          volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
-          Praesent egestas leo in pede. Praesent blandit odio eu enim.
-          Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum
-          primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-          Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum.
-          Maecenas adipiscing ante non diam sodales hendrerit.
-        </p> -->
 
+    <div id="screen" class="row">
+      <div id="feed" class="col s9">
         <div class="row">
           <div class="col s10 offset-s1">
             <div class="card row">
@@ -171,8 +172,8 @@
                 </div>
                 <div class="col s10">
                   <span class="black-text"
-                    ><i class="tiny material-icons">location_on</i> Polynésie
-                    Française
+                    ><i class="tiny material-icons">location_on</i> Salt Lake
+                    City
                   </span>
                   <span class="black-text">
                     <i class="tiny material-icons">people</i>
@@ -222,51 +223,133 @@
       </div>
       <div id="group" class="col s3 pink lighten-4">
         <ul class="collection">
-          <li class="collection-item avatar">
-            <img src="images/st.png" alt="" class="circle" />
-            <span class="title">Title</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-            <a href="#!" class="secondary-content"
-              ><i class="material-icons">grade</i></a
-            >
-          </li>
-          <li class="collection-item avatar">
+          <a class="modal-trigger" href="#groupInfoPlus">
+            <li class="collection-item avatar">
+              <img src="images/st.png" alt="" class="circle" />
+              <span class="title">Sale Timbanque</span>
+              <p class="groupInfo">
+                <i class="tiny material-icons">location_on</i> Martinique
+                <br />
+                <i class="tiny material-icons">people</i> Paul, Camille
+              </p>
+            </li></a
+          >
+
+          <!-- new travel group -->
+          <li class="collection-item avatar" style="visibility: hidden">
             <i class="material-icons circle">folder</i>
             <span class="title">Title</span>
             <p>
               First Line <br />
               Second Line
             </p>
-            <a href="#!" class="secondary-content"
-              ><i class="material-icons">grade</i></a
-            >
-          </li>
-          <li class="collection-item avatar">
-            <i class="material-icons circle green">insert_chart</i>
-            <span class="title">Title</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-            <a href="#!" class="secondary-content"
-              ><i class="material-icons">grade</i></a
-            >
-          </li>
-          <li class="collection-item avatar">
-            <i class="material-icons circle red">play_arrow</i>
-            <span class="title">Title</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-            <a href="#!" class="secondary-content"
-              ><i class="material-icons">grade</i></a
-            >
           </li>
         </ul>
+      </div>
+      <div id="groupInfoPlus" class="modal">
+        <div class="modal-content">
+          <div class="row">
+            <div id="dmGroup" class="col s4">
+              <div class="header">
+                <img src="images/st.png" alt="" class="circle" height="70px" />
+                <div>
+                  <h6>Sale Timbanque</h6>
+
+                  <div class="groupDMhead">
+                    <ul>
+                      <li>
+                        <img
+                          src="images/pp1.jpeg"
+                          alt=""
+                          class="circle"
+                          height="30px"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="images/pp1.jpeg"
+                          alt=""
+                          class="circle"
+                          height="30px"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="images/pp1.jpeg"
+                          alt=""
+                          class="circle"
+                          height="30px"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <img src="images/pp1.jpeg" alt="" class="circle" />
+                    <span>Camille Honnete</span>
+                    <p>Blablabla</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <img src="images/pp1.jpeg" alt="" class="circle" />
+                    <span>Paul Emploi</span>
+                    <p>Blabalbalbablabl</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <img src="images/pp1.jpeg" alt="" class="circle" />
+                    <span>Camille Honnete</span>
+                    <p>Bloblobloblo</p>
+                  </li>
+                </ul>
+                <div>
+                  <div class="sender-area">
+                    <div class="input-place">
+                      <input
+                        placeholder="Send a message."
+                        class="send-input"
+                        type="text"
+                      />
+                      <div class="send">
+                        <svg
+                          class="send-icon"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 512 512"
+                          style="enable-background: new 0 0 512 512"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <g>
+                              <path
+                                fill="#6B6C7B"
+                                d="M481.508,210.336L68.414,38.926c-17.403-7.222-37.064-4.045-51.309,8.287C2.86,59.547-3.098,78.551,1.558,96.808 L38.327,241h180.026c8.284,0,15.001,6.716,15.001,15.001c0,8.284-6.716,15.001-15.001,15.001H38.327L1.558,415.193 c-4.656,18.258,1.301,37.262,15.547,49.595c14.274,12.357,33.937,15.495,51.31,8.287l413.094-171.409 C500.317,293.862,512,276.364,512,256.001C512,235.638,500.317,218.139,481.508,210.336z"
+                              ></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="infoVoyage" class="col s8">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptates nihil laudantium similique cumque sed! Est atque
+              asperiores dolorum odio, doloremque, repudiandae quisquam quo
+              dolore similique animi placeat voluptatem doloribus ad.
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="js/materialize.js"></script>

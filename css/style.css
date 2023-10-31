@@ -1,8 +1,10 @@
 #screen {
   height: 80vh;
 }
+
 #rsbutton li {
   display: inline;
+  padding-right: 15px;
 }
 
 #feed {
@@ -16,6 +18,155 @@
 }
 
 .add button {
-    margin: 5px;
-    float: right;
+  margin: 5px;
+  float: right;
+}
+
+.title {
+  color: #444;
+}
+.header {
+  display: flex;
+}
+.header img {
+  margin-right: 50px;
+  color: #444;
+}
+/* .header h6 {
+  padding-top: 10px;
+} */
+
+.groupInfo {
+  color: #888;
+  border: none;
+}
+
+.groupInfo i {
+  color: #f50057;
+}
+
+.group ul {
+  border: none;
+}
+
+#modal1 {
+  z-index: 12;
+  margin-left: 5%;
+  width: 65%;
+  overflow-x: auto;
+}
+
+#groupInfoPlus {
+  z-index: 12;
+  margin-left: 1%;
+  width: 73%;
+  overflow-x: auto;
+}
+
+.plus {
+  padding: 0px;
+  margin: 0px;
+}
+
+.groupDMhead ul {
+  display: flex;
+}
+.groupDMhead li {
+  max-width: 35px;
+}
+
+.sender-area {
+  background-color: #343541;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.message {
+  width: 100%;
+  height: 40px;
+}
+
+.message.one,
+.message.three,
+.message.five {
+  background-color: #2e2f3a;
+}
+
+.message.two,
+.message.four,
+.message.six {
+  background-color: #343541;
+}
+
+.send-img {
+  width: 30px;
+}
+
+.send-input {
+  outline: none;
+  display: flex;
+  border: none;
+  background: none;
+  height: 40px;
+  width: 230px;
+  border-radius: 7px;
+  background: none;
+  color: white;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 5px;
+}
+
+.send-input::placeholder {
+  color: #828e9e;
+}
+
+.input-place {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 10px;
+  align-items: center;
+  background-color: #40414f;
+  border-radius: 7px;
+  height: 40px;
+  width: 280px;
+  gap: 5px;
+  border: 1px solid #2e2f3a;
+}
+
+.send {
+  width: 30px;
+  height: 30px;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.send-icon {
+  width: 17px;
+}
+
+.searchF {
+  margin-left: 10px;
+  margin-right: 80px;
+}
+.im {
+  border: red 1px solid;
+}
+/* Scrollbars */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
 }
