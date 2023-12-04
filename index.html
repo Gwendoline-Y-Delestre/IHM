@@ -41,40 +41,145 @@
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
               <div class="modal-content blue-text text-darken-2">
-                <h4 class="center-align">Rechercher des amis</h4>
-                <div>
-                  <div class="add valign-wrapper searchF">
-                    <img
-                      src="images/pp1.jpeg"
-                      alt=""
-                      class="circle searchF"
-                      height="70px"
-                    />
-                    <p class="searchF">Jean Bon</p>
-                    <button
-                      id="add"
-                      class="waves-effect waves-light btn blue darken-2 searchF"
-                      onclick="M.toast({html: 'Demande envoyée'})"
-                    >
-                      Ajouter
-                    </button>
+                  <h4 class="center-align">Rechercher des amis</h4>
+                  <div class="searchBox">
+                      <div class="row">
+                          <form class="col s12">
+                              <div class="row">
+                                  <div class="input-field col s4 offset-s3">
+                                      <input id="icon_prefix" type="text" class="validate">
+                                      <label for="icon_prefix">Nom, pseudo, adresse e-mail</label>
+                                  </div>
+                                  <div class="input-field col s2">
+                                      <a id="btn-searchFriend" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
                   </div>
-                </div>
+                  <div id="searchFriend" hidden>
+                      <div class="add valign-wrapper searchF">
+                          <img src="images/pp1.jpeg" alt="" class="circle searchF" height="70px" />
+                          <p class="searchF">Jean Bon</p>
+                          <button id="add" class="waves-effect waves-light btn blue darken-2 searchF" onclick="M.toast({html: 'Demande envoyée'})">Ajouter</button>
+                      </div>
+                  </div>
               </div>
               <div class="modal-footer">
-                <a class="modal-close waves-effect waves-green btn-flat"
-                  >Fermer</a
-                >
+                  <a class="modal-close waves-effect waves-green btn-flat">Fermer</a>
               </div>
-            </div>
+          </div>
           </li>
           <li>
+            <!-- Modal Trigger -->
             <a
-              href="mobile.html"
-              class="waves-effect waves-light btn blue darken-2"
+              href="#modal3"
+              class="waves-effect waves-light btn blue darken-2 modal-trigger"
             >
               <img src="images/avion.png" class="material-icons"
             /></a>
+
+
+            <!-- Modal Structure -->
+            <div id="modal3" class="modal">
+              <div class="modal-content blue-text text-darken-2">
+                  <h4 class="center-align">Nouveau voyage</h4>
+                  <div class="row">
+                      <form class="col s12">
+                        <div class="row">
+                          <div class="input-field col s8">
+                              <input id="textarea1" type="text" class="validate">
+                              <label for="textarea1" class="active blue-text text-darken-2">Titre du voyage*</label>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="input-field col s12">
+                              <input id="textarea2" type="text" class="validate">
+                              <label for="textarea2" class="active blue-text text-darken-2">Localisation</label>
+                          </div>
+                      </div>
+                      <div id="loc-etape" class="row" hidden>
+                        <div class="input-field col s12">
+                            <input id="textarea-etape" type="text" class="validate">
+                            <label for="textarea-etape" class="active blue-text text-darken-2">Localisation étape</label>
+                        </div>
+                      </div>
+                          <div class="row" id="add-etape">
+                              <a id="btn-etape" class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"><i class="material-icons left">add</i>Ajouter une étape</a>
+                          </div>
+                          <div class="row">
+                              <div class="input-field col s6">
+                                  <input id="departure_date" type="text" class="datepicker">
+                                  <label for="departure_date" class="blue-text text-darken-2">Date de départ</label>
+                              </div>
+                              <div class="input-field col s6">
+                                  <input id="arrival_date" type="text" class="datepicker">
+                                  <label for="arrival_date" class="blue-text text-darken-2">Date d'arrivée</label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <a class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"><i class="material-icons left">add</i>Ajouter un compagnon de voyage</a>
+                          </div>
+                          <div class="row">
+                            <h4>Transport :</h4>
+                          </div>
+                          <div class="valign-wrapper center-align">
+                            <label class="m-r-2">
+                                <input type="checkbox" class="filled-in" />
+                                <span><i class="material-icons">directions_car</i></span>
+                            </label>
+                            <label class="m-r-2">
+                                <input type="checkbox" class="filled-in" />
+                                <span><i class="material-icons">directions_bus</i></span>
+                            </label>
+                            <label class="m-r-2">
+                                <input type="checkbox" class="filled-in" />
+                                <span><i class="material-icons">train</i></span>
+                            </label>
+                            <label class="m-r-2">
+                                <input type="checkbox" class="filled-in" />
+                                <span><i class="material-icons">flight</i></span>
+                            </label>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span><i class="material-icons">directions_boat</i></span>
+                            </label>
+                            </div>
+                              <div class="row">
+                                  <div class="input-field col s12">
+                                      <input id="price_per_person" type="text" class="validate">
+                                      <label for="price_per_person" class="blue-text text-darken-2">Prix par personne</label>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="resa" type="text" class="validate">
+                                    <label for="resa" class="blue-text text-darken-2">Numéro de réservation</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s4">
+                                  <input id="travel_date" type="text" class="datepicker">
+                                  <label for="travel_date" class="blue-text text-darken-2">Date</label>
+                              </div>
+                              <div class="input-field col s4">
+                                <input id="travel_hour" type="text" class="validate">
+                                <label for="travel_hour" class="blue-text text-darken-2">Heure</label>
+                            </div>
+                            <div class="input-field col s4">
+                              <input id="travel_place" type="text" class="validate">
+                              <label for="travel_place" class="blue-text text-darken-2">Lieu</label>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Valider</a>
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Annuler</a>
+                  </div>
+              </div>
+          </div>
           </li>
         </ul>
         <ul class="right hide-on-med-and-down">
@@ -137,8 +242,7 @@
                   </li>
                   <li>
                     <a
-                      href="compte.html"
-                      class="waves-effect waves-light btn blue darken-2"
+                      class="waves-effect waves-light btn blue darken-2 like"
                     >
                       <i class="material-icons">favorite_border</i></a
                     >
@@ -201,8 +305,7 @@
                   </li>
                   <li>
                     <a
-                      href="compte.html"
-                      class="waves-effect waves-light btn blue darken-2"
+                      class="waves-effect waves-light btn blue darken-2 like"
                     >
                       <i class="material-icons">favorite_border</i></a
                     >
