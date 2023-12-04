@@ -24,19 +24,12 @@
         <ul class="left hide-on-med-and-down">
           <li>
             <a
-              href="messages.html"
-              class="waves-effect waves-light btn blue darken-2"
-            >
-              <i class="tiny material-icons">group</i></a
-            >
+              class="waves-effect waves-light btn modal-trigger blue darken-2"
+              href="#modal2">
+              <i class="tiny material-icons">group</i>
+            </a>
           </li>
           <li>
-            <!-- Modal Trigger -->
-            <a
-              class="waves-effect waves-light btn modal-trigger blue darken-2"
-              href="#modal1"
-              ><i class="material-icons">person_add</i></a
-            >
 
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
@@ -70,6 +63,7 @@
               </div>
           </div>
           </li>
+
           <li>
             <!-- Modal Trigger -->
             <a
@@ -194,6 +188,76 @@
         </ul>
       </div>
     </nav>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content blue-text text-darken-2 right-align">
+        <div class="af">
+          <a
+            class="waves-effect waves-light btn modal-trigger blue darken-2"
+            href="#modal1">
+            <i class="material-icons">person_add</i>
+          </a>
+        </div>
+        <div>
+          <h5 class="center-align">Liste des amis</h5>
+          <div class="listeAmi">
+            <div class="list">
+              <img src="images/pp1.jpeg" alt="" class="circle" height="50px"/>
+              <p>Jean Bon</p>
+              <div class="msg">
+                <a
+                  class="waves-effect waves-light btn modal-trigger blue darken-2"
+                  href="#modal4">
+                  <i class="tiny material-icons">message</i>
+                </a>
+              </div>                
+            </div>
+            <div class="list">
+              <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
+              <p>Jean Bon</p>
+              <div class="msg">
+                <a
+                  class="waves-effect waves-light btn modal-trigger blue darken-2"
+                  href="#modal4">
+                  <i class="tiny material-icons">message</i>
+                </a>
+              </div>   
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>
+    <div id="modal4" class="modal">
+      <div class="modal-content blue-text text-darken-2 right-align">
+        <a class="modal-close waves-effect waves-blue btn-flat">
+          <i class="tiny material-icons">close</i>
+        </a>
+        <div>
+          <!-- <h5 class="center-align">Chatting box</h5> -->
+          <div class="chatlist"> 
+            <div class="chat">
+              <div class="chatheader valign-wrapper">
+                <img src="images/pp1.jpeg" alt="" class="circle" height="40px"/>
+                <p>Jean Bon</p>
+              </div>
+              <p>Here is a chatting message from friend.</p>
+            </div>
+
+            <div class="chat">
+              <div class="right-align chathostheader">
+                <p>You</p>
+                <img src="images/pp1.jpeg" alt="" class="circle" height="40px"/>
+              </div>   
+              <p>Here is a chatting message from user.</p>
+            </div>
+          </div>
+          <div class="input-field">
+            <input type="text" id="chat_input" placeholder="Type your message here...">
+            <button class="btn waves-effect waves-light blue" type="submit" name="action">Send</button>
+          </div>
+        </div> 
+      </div>
+    </div>
 
     <div id="screen" class="row">
       <div id="feed" class="col s9">
