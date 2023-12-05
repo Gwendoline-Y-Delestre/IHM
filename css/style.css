@@ -294,3 +294,17 @@
 .input-amis button {
   flex-shrink: 0;
 }
+
+#join-travel{
+  position: absolute;
+  bottom: 0.5%;
+  right : 1%;
+}
+#image_avion{
+  width: 50px;
+  height: 50px;
+}
+#partage_voyage{
+  display: flex;
+  align-items: center;
+}

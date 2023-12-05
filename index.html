@@ -32,32 +32,32 @@
           <li>
 
             <!-- Modal Structure -->
-            <div id="modal1" class="modal">
+            <div id="modal1" class="modal col s6">
               <div class="modal-content blue-text text-darken-2">
-                  <h4 class="center-align">Rechercher des amis</h4>
-                  <div class="searchBox">
-                      <div class="row">
-                          <form class="col s12">
-                              <div class="row">
-                                  <div class="input-field col s4 offset-s3">
-                                      <input id="icon_prefix" type="text" class="validate">
-                                      <label for="icon_prefix">Nom, pseudo, adresse e-mail</label>
-                                  </div>
-                                  <div class="input-field col s2">
-                                      <a id="btn-searchFriend" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
-                                  </div>
-                              </div>
-                          </form>
+                <h5 class="center-align">Rechercher un ami</h5>
+                <form class="col s12">
+                  <div class="row">
+                      <div class="input-field col s4 offset-s3">
+                          <input id="search-traveler" type="text" class="validate">
+                          <label for="search-traveler">Nom, pseudo, adresse e-mail</label>
+                      </div>
+                      <div class="input-field col s2">
+                          <a id="btn-searchFriend" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
                       </div>
                   </div>
-                  <div id="searchFriend" hidden>
-                      <div class="add valign-wrapper searchF">
-                          <img src="images/pp1.jpeg" alt="" class="circle searchF" height="70px" />
-                          <p class="searchF">Jean Bon</p>
-                          <button id="add" class="waves-effect waves-light btn blue darken-2 searchF" onclick="M.toast({html: 'Demande envoyée'})">Ajouter</button>
-                      </div>
+                </form>
+                <div hidden id="searchFriend">
+                  <div class="list">
+                    <img src="images/pp1.jpeg" alt="" class="circle" height="50px"/>
+                    <p>Jean Bon</p>
+                    <div class="msg">
+                      <a
+                        class="waves-effect waves-light btn modal-trigger blue darken-2" onclick="M.toast({html: 'Demande envoyée'})">
+                        <i class="tiny material-icons">add</i>
+                      </a>
+                    </div>                
                   </div>
-              </div>
+                </div>
               <div class="modal-footer">
                   <a class="modal-close waves-effect waves-green btn-flat">Fermer</a>
               </div>
@@ -75,7 +75,7 @@
 
 
             <!-- Modal Structure -->
-            <div id="modal3" class="modal">
+            <div id="modal3" class="modal modal-fixed-footer">
               <div class="modal-content blue-text text-darken-2">
                   <h4 class="center-align">Nouveau voyage</h4>
                   <div class="row">
@@ -111,11 +111,56 @@
                                   <label for="arrival_date" class="blue-text text-darken-2">Date d'arrivée</label>
                               </div>
                           </div>
+                          <!-- Modal Trigger -->
                           <div class="row">
-                              <a class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"><i class="material-icons left">add</i>Ajouter un compagnon de voyage</a>
+                              <a href="#modal-compagnon" class="waves-effect waves-light btn blue darken-2 col s4 offset-s4 modal-trigger"><i class="material-icons left">add</i>Ajouter un compagnon de voyage</a>
                           </div>
+                          <!-- Modal Structure -->
+                          <div id="modal-compagnon" class="modal">
+                            <div class="modal-content blue-text text-darken-2">
+                              <div>
+                                <h5 class="center-align">Ajouter un compagnon</h5>
+                                <form class="col s12">
+                                  <div class="row">
+                                      <div class="input-field col s4 offset-s3">
+                                          <input id="search-traveler" type="text" class="validate">
+                                          <label for="search-traveler">Nom, pseudo, adresse e-mail</label>
+                                      </div>
+                                      <div class="input-field col s2">
+                                          <a id="btn-add-traveler" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
+                                      </div>
+                                  </div>
+                              </form>
+                                <div>
+                                  <div class="list">
+                                    <img src="images/pp1.jpeg" alt="" class="circle" height="50px"/>
+                                    <p>Jean Bon</p>
+                                    <div class="msg">
+                                      <a
+                                        class="waves-effect waves-light btn modal-trigger blue darken-2" onclick="M.toast({html: 'Demande envoyée'})">
+                                        <i class="tiny material-icons">add</i>
+                                      </a>
+                                    </div>                
+                                  </div>
+                                  <div class="list">
+                                    <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
+                                    <p>Jean Bon</p>
+                                    <div class="msg">
+                                      <a
+                                        class="waves-effect waves-light btn modal-trigger blue darken-2" onclick="M.toast({html: 'Demande envoyée'})">
+                                        <i class="tiny material-icons">add</i>
+                                      </a>
+                                    </div>   
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+                            </div>
+                        </div>
                           <div class="row">
-                            <h4>Transport :</h4>
+                            <h4 class="valign-wraper center-align">Transport :</h4>
                           </div>
                           <div class="valign-wrapper center-align">
                             <label class="m-r-2">
@@ -256,6 +301,23 @@
             <button class="btn waves-effect waves-light blue" type="submit" name="action">Send</button>
           </div>
         </div> 
+      </div>
+    </div>
+
+    <!--Modal-share travel trigger-->
+    <a href="#modal-share-travel" id="btn-share-travel" class="btn-floating blue darken-2 modal-trigger"><i class="material-icons">add</i></a>
+    <!-- Modal share travel -->
+    <div id="modal-share-travel" class="modal modal-fixed-footer">
+      <div class="modal-content blue-text text-darken-2">
+        <div class="row">
+          <div id="partage_voyage">
+            <h4>Partagez votre voyage</h4>
+            <img id="image_avion" src="images/avion_papier.png" class="responsive_img" alt="Avion en papier"/>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
       </div>
     </div>
 
@@ -401,7 +463,7 @@
               </p>
             </li></a
           >
-
+          
           <!-- new travel group -->
           <li class="collection-item avatar" style="visibility: hidden">
             <i class="material-icons circle">folder</i>
@@ -412,7 +474,26 @@
             </p>
           </li>
         </ul>
-      </div>
+        <!--Modal-join-travel-trigger-->
+        <a href="#modal-join-travel" id="join-travel" class="btn-floating blue darken-2 right down modal-trigger"><i class="material-icons">add</i></a>
+        <!--join travel group-->
+        <div id="modal-join-travel" class="modal">
+          <div class="modal-content blue-text text-darken-2">
+            <h5 class="center-align">Rejoindre un voyage</h5>
+            <form class="col s12">
+              <div class="row">
+                  <div class="input-field col s4 offset-s3">
+                      <input id="search-traveler" type="text" class="validate">
+                      <label for="search-traveler">Nom du groupe, destination, membre du groupe</label>
+                  </div>
+                  <div class="input-field col s2">
+                      <a id="btn-search-travel" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
       <div id="groupInfoPlus" class="modal">
         <div class="modal-content">
           <div class="row">
