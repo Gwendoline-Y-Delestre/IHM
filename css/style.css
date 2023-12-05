@@ -187,14 +187,12 @@
   max-height: 100vh;
 }
 
-
 .listeAmi {
   width: 100%;
   height: 100vh;
-  
 }
 
-.list{
+.list {
   display: flex;
   align-items: center;
   margin-bottom: 2px;
@@ -204,59 +202,54 @@
   padding-left: 3%;
 }
 
-.list p{
+.list p {
   width: 40%;
   font-size: medium;
-
 }
 
-.af{
+.af {
   height: 40px;
   padding-bottom: 20px;
 }
-.msg{
+.msg {
   padding-left: 10%;
 }
 
-
-.chatlist{
+.chatlist {
   background-color: #828e9e6c;
   padding: 5%;
   border-radius: 5px;
   height: 70vh;
   overflow-y: auto;
-
 }
 
-.chat{
+.chat {
   background-color: #b6d6ff;
   border-radius: 7px;
 }
 
-.chatheader{
+.chatheader {
   margin-top: 3%;
   margin-left: 3%;
   height: 50px;
 }
 
-.chathostheader{
+.chathostheader {
   display: flex;
   align-items: center;
   padding-left: 65%;
   height: 50px;
 }
 
-.chathostheader p{
+.chathostheader p {
   margin-right: 3%;
 }
 
-
-.chatheader p{
+.chatheader p {
   margin-left: 3%;
 }
 
-
-.chat p{
+.chat p {
   text-align: left;
   padding-left: 5%;
   padding-right: 5%;
@@ -278,33 +271,37 @@
   flex-shrink: 0;
 }
 
-.input-amis{
+.input-amis {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 10px;
-
 }
 
 .input-amis input {
-  flex-grow: 1; 
-  margin-right: 10px; 
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
 .input-amis button {
   flex-shrink: 0;
 }
 
-#join-travel{
+#join-travel {
   position: absolute;
   bottom: 0.5%;
-  right : 1%;
+  right: 1%;
 }
-#image_avion{
+#image_avion {
   width: 50px;
   height: 50px;
 }
-#partage_voyage{
+#partage_voyage {
   display: flex;
   align-items: center;
+}
+
+#newGroup {
+  visibility: hidden;
+  margin: 0.5em;
 }

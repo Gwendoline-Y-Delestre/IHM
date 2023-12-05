@@ -25,210 +25,260 @@
           <li>
             <a
               class="waves-effect waves-light btn modal-trigger blue darken-2"
-              href="#modal2">
+              href="#modal2"
+            >
               <i class="tiny material-icons">group</i>
             </a>
           </li>
           <li>
-
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal col s6">
+            <!-- Modal Structure Recherche d'amis -->
+            <div id="NewFriendModal" class="modal col s6">
               <div class="modal-content blue-text text-darken-2">
                 <h5 class="center-align">Rechercher un ami</h5>
                 <form class="col s12">
                   <div class="row">
-                      <div class="input-field col s4 offset-s3">
-                          <input id="search-traveler" type="text" class="validate">
-                          <label for="search-traveler">Nom, pseudo, adresse e-mail</label>
-                      </div>
-                      <div class="input-field col s2">
-                          <a id="btn-searchFriend" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
-                      </div>
+                    <div class="input-field col s4 offset-s3">
+                      <input
+                        id="search-traveler"
+                        type="text"
+                        class="validate"
+                      />
+                      <label for="search-traveler"
+                        >Nom, pseudo, adresse e-mail</label
+                      >
+                    </div>
+                    <div class="input-field col s2">
+                      <a
+                        id="btn-searchFriend"
+                        class="waves-effect waves-light btn blue darken-1"
+                        ><i class="material-icons center-align"
+                          >youtube_searched_for</i
+                        ></a
+                      >
+                    </div>
                   </div>
                 </form>
                 <div hidden id="searchFriend">
                   <div class="list">
-                    <img src="images/pp1.jpeg" alt="" class="circle" height="50px"/>
+                    <img
+                      src="images/pp1.jpeg"
+                      alt=""
+                      class="circle"
+                      height="50px"
+                    />
                     <p>Jean Bon</p>
                     <div class="msg">
                       <a
-                        class="waves-effect waves-light btn modal-trigger blue darken-2" onclick="M.toast({html: 'Demande envoyée'})">
+                        class="waves-effect waves-light btn modal-trigger blue darken-2"
+                        onclick="M.toast({html: 'Demande envoyée'})"
+                      >
                         <i class="tiny material-icons">add</i>
                       </a>
-                    </div>                
+                    </div>
                   </div>
                 </div>
-              <div class="modal-footer">
-                  <a class="modal-close waves-effect waves-green btn-flat">Fermer</a>
+                <div class="modal-footer">
+                  <a class="modal-close waves-effect waves-green btn-flat"
+                    >Fermer</a
+                  >
+                </div>
               </div>
-          </div>
+            </div>
           </li>
 
           <li>
             <!-- Modal Trigger -->
             <a
-              href="#modal3"
+              href="#NewTripModal"
               class="waves-effect waves-light btn blue darken-2 modal-trigger"
             >
-              <img src="images/avion.png" class="material-icons"
-            /></a>
+              <img src="images/avion.png" class="material-icons" />
+            </a>
 
-
-            <!-- Modal Structure -->
-            <div id="modal3" class="modal modal-fixed-footer">
+            <!-- Modal Structure Nouveau voyage -->
+            <div id="NewTripModal" class="modal modal-fixed-footer">
               <div class="modal-content blue-text text-darken-2">
-                  <h4 class="center-align">Nouveau voyage</h4>
-                  <div class="row">
-                      <form class="col s12">
-                        <div class="row">
-                          <div class="input-field col s8">
-                              <input id="textarea1" type="text" class="validate">
-                              <label for="textarea1" class="active blue-text text-darken-2">Titre du voyage*</label>
-                          </div>
+                <h4 class="center-align">Nouveau voyage</h4>
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s8">
+                        <input id="titreVoyage" type="text" class="validate" />
+                        <label
+                          for="titreVoyage"
+                          class="active blue-text text-darken-2"
+                          >Titre du voyage*</label
+                        >
                       </div>
-                      <div class="row">
-                          <div class="input-field col s12">
-                              <input id="textarea2" type="text" class="validate">
-                              <label for="textarea2" class="active blue-text text-darken-2">Localisation</label>
-                          </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="LieuVoyage" type="text" class="validate" />
+                        <label
+                          for="LieuVoyage"
+                          class="active blue-text text-darken-2"
+                          >Destination</label
+                        >
                       </div>
-                      <div id="loc-etape" class="row" hidden>
-                        <div class="input-field col s12">
-                            <input id="textarea-etape" type="text" class="validate">
-                            <label for="textarea-etape" class="active blue-text text-darken-2">Localisation étape</label>
-                        </div>
+                    </div>
+                    <div id="loc-etape" class="row" hidden>
+                      <div class="input-field col s12">
+                        <input
+                          id="textarea-etape"
+                          type="text"
+                          class="validate"
+                        />
+                        <label
+                          for="textarea-etape"
+                          class="active blue-text text-darken-2"
+                          >1ère étape</label
+                        >
                       </div>
-                          <div class="row" id="add-etape">
-                              <a id="btn-etape" class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"><i class="material-icons left">add</i>Ajouter une étape</a>
-                          </div>
-                          <div class="row">
-                              <div class="input-field col s6">
-                                  <input id="departure_date" type="text" class="datepicker">
-                                  <label for="departure_date" class="blue-text text-darken-2">Date de départ</label>
-                              </div>
-                              <div class="input-field col s6">
-                                  <input id="arrival_date" type="text" class="datepicker">
-                                  <label for="arrival_date" class="blue-text text-darken-2">Date d'arrivée</label>
-                              </div>
-                          </div>
-                          <!-- Modal Trigger -->
-                          <div class="row">
-                              <a href="#modal-compagnon" class="waves-effect waves-light btn blue darken-2 col s4 offset-s4 modal-trigger"><i class="material-icons left">add</i>Ajouter un compagnon de voyage</a>
-                          </div>
-                          <!-- Modal Structure -->
-                          <div id="modal-compagnon" class="modal">
-                            <div class="modal-content blue-text text-darken-2">
-                              <div>
-                                <h5 class="center-align">Ajouter un compagnon</h5>
-                                <form class="col s12">
-                                  <div class="row">
-                                      <div class="input-field col s4 offset-s3">
-                                          <input id="search-traveler" type="text" class="validate">
-                                          <label for="search-traveler">Nom, pseudo, adresse e-mail</label>
-                                      </div>
-                                      <div class="input-field col s2">
-                                          <a id="btn-add-traveler" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
-                                      </div>
-                                  </div>
-                              </form>
-                                <div>
-                                  <div class="list">
-                                    <img src="images/pp1.jpeg" alt="" class="circle" height="50px"/>
-                                    <p>Jean Bon</p>
-                                    <div class="msg">
-                                      <a
-                                        class="waves-effect waves-light btn modal-trigger blue darken-2" onclick="M.toast({html: 'Demande envoyée'})">
-                                        <i class="tiny material-icons">add</i>
-                                      </a>
-                                    </div>                
-                                  </div>
-                                  <div class="list">
-                                    <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
-                                    <p>Jean Bon</p>
-                                    <div class="msg">
-                                      <a
-                                        class="waves-effect waves-light btn modal-trigger blue darken-2" onclick="M.toast({html: 'Demande envoyée'})">
-                                        <i class="tiny material-icons">add</i>
-                                      </a>
-                                    </div>   
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a class="modal-close waves-effect waves-green btn-flat">Fermer</a>
-                            </div>
-                        </div>
-                          <div class="row">
-                            <h4 class="valign-wraper center-align">Transport :</h4>
-                          </div>
-                          <div class="valign-wrapper center-align">
-                            <label class="m-r-2">
-                                <input type="checkbox" class="filled-in" />
-                                <span><i class="material-icons">directions_car</i></span>
-                            </label>
-                            <label class="m-r-2">
-                                <input type="checkbox" class="filled-in" />
-                                <span><i class="material-icons">directions_bus</i></span>
-                            </label>
-                            <label class="m-r-2">
-                                <input type="checkbox" class="filled-in" />
-                                <span><i class="material-icons">train</i></span>
-                            </label>
-                            <label class="m-r-2">
-                                <input type="checkbox" class="filled-in" />
-                                <span><i class="material-icons">flight</i></span>
-                            </label>
-                            <label>
-                                <input type="checkbox" class="filled-in" />
-                                <span><i class="material-icons">directions_boat</i></span>
-                            </label>
-                            </div>
-                              <div class="row">
-                                  <div class="input-field col s12">
-                                      <input id="price_per_person" type="text" class="validate">
-                                      <label for="price_per_person" class="blue-text text-darken-2">Prix par personne</label>
-                                  </div>
-                              </div>
-                              <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="resa" type="text" class="validate">
-                                    <label for="resa" class="blue-text text-darken-2">Numéro de réservation</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                              <div class="input-field col s4">
-                                  <input id="travel_date" type="text" class="datepicker">
-                                  <label for="travel_date" class="blue-text text-darken-2">Date</label>
-                              </div>
-                              <div class="input-field col s4">
-                                <input id="travel_hour" type="text" class="validate">
-                                <label for="travel_hour" class="blue-text text-darken-2">Heure</label>
-                            </div>
-                            <div class="input-field col s4">
-                              <input id="travel_place" type="text" class="validate">
-                              <label for="travel_place" class="blue-text text-darken-2">Lieu</label>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Valider</a>
-                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Annuler</a>
-                  </div>
+                    </div>
+                    <div class="row" id="add-etape">
+                      <a
+                        id="btn-etape"
+                        class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"
+                        ><i class="material-icons left">add</i>Ajouter une
+                        étape</a
+                      >
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input
+                          id="departure_date"
+                          type="text"
+                          class="datepicker"
+                        />
+                        <label
+                          for="departure_date"
+                          class="blue-text text-darken-2"
+                          >Date de départ</label
+                        >
+                      </div>
+                      <div class="input-field col s6">
+                        <input
+                          id="arrival_date"
+                          type="text"
+                          class="datepicker"
+                        />
+                        <label
+                          for="arrival_date"
+                          class="blue-text text-darken-2"
+                          >Date d'arrivée</label
+                        >
+                      </div>
+                    </div>
+                    <!-- Modal Trigger -->
+                    <div class="row">
+                      <a
+                        href="#modal-compagnon"
+                        class="waves-effect waves-light btn blue darken-2 col s4 offset-s4 modal-trigger"
+                        ><i class="material-icons left">add</i>Ajouter un
+                        compagnon de voyage</a
+                      >
+                    </div>
+
+                    <div class="row">
+                      <h4 class="valign-wraper center-align">Transport :</h4>
+                    </div>
+                    <div class="valign-wrapper center-align">
+                      <label class="m-r-2">
+                        <input type="checkbox" class="filled-in" />
+                        <span
+                          ><i class="material-icons">directions_car</i></span
+                        >
+                      </label>
+                      <label class="m-r-2">
+                        <input type="checkbox" class="filled-in" />
+                        <span
+                          ><i class="material-icons">directions_bus</i></span
+                        >
+                      </label>
+                      <label class="m-r-2">
+                        <input type="checkbox" class="filled-in" />
+                        <span><i class="material-icons">train</i></span>
+                      </label>
+                      <label class="m-r-2">
+                        <input type="checkbox" class="filled-in" />
+                        <span><i class="material-icons">flight</i></span>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span
+                          ><i class="material-icons">directions_boat</i></span
+                        >
+                      </label>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input
+                          id="price_per_person"
+                          type="text"
+                          class="validate"
+                        />
+                        <label
+                          for="price_per_person"
+                          class="blue-text text-darken-2"
+                          >Prix par personne</label
+                        >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="resa" type="text" class="validate" />
+                        <label for="resa" class="blue-text text-darken-2"
+                          >Numéro de réservation</label
+                        >
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s4">
+                        <input
+                          id="travel_date"
+                          type="text"
+                          class="datepicker"
+                        />
+                        <label for="travel_date" class="blue-text text-darken-2"
+                          >Date</label
+                        >
+                      </div>
+                      <div class="input-field col s4">
+                        <input id="travel_hour" type="text" class="validate" />
+                        <label for="travel_hour" class="blue-text text-darken-2"
+                          >Heure</label
+                        >
+                      </div>
+                    </div>
+                    <div class="input-field col s4">
+                      <input id="travel_place" type="text" class="validate" />
+                      <label for="travel_place" class="blue-text text-darken-2"
+                        >Lieu</label
+                      >
+                    </div>
+                  </form>
+                </div>
               </div>
-          </div>
+              <div class="modal-footer">
+                <a
+                  onclick="NewGroup()"
+                  class="modal-close waves-effect waves-green btn-flat"
+                  >Valider</a
+                >
+                <a
+                  href="#!"
+                  class="modal-close waves-effect waves-green btn-flat"
+                  >Annuler</a
+                >
+              </div>
+            </div>
           </li>
         </ul>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a
-              href="compte.html"
-              class="waves-effect waves-light btn blue darken-2"
-            >
-              <i class="material-icons">person</i></a
-            >
+            <a href="#" class="waves-effect waves-light btn blue darken-2">
+              <i class="material-icons">person</i>
+            </a>
           </li>
         </ul>
       </div>
@@ -239,7 +289,8 @@
         <div class="af">
           <a
             class="waves-effect waves-light btn modal-trigger blue darken-2"
-            href="#modal1">
+            href="#NewFriendModal"
+          >
             <i class="material-icons">person_add</i>
           </a>
         </div>
@@ -247,42 +298,104 @@
           <h5 class="center-align">Liste des amis</h5>
           <div class="listeAmi">
             <div class="list">
-              <img src="images/pp1.jpeg" alt="" class="circle" height="50px"/>
+              <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
               <p>Jean Bon</p>
               <div class="msg">
                 <a
                   class="waves-effect waves-light btn modal-trigger blue darken-2"
-                  href="#modal4">
+                  href="#ChatModal"
+                >
                   <i class="tiny material-icons">message</i>
                 </a>
-              </div>                
+              </div>
             </div>
+            <div class="list">
+              <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
+              <p>Dorothe</p>
+              <div class="msg">
+                <a
+                  class="waves-effect waves-light btn modal-trigger blue darken-2"
+                  href="#ChatModal"
+                >
+                  <i class="tiny material-icons">message</i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure Ajout compagnon ajout voyage -->
+    <div id="modal-compagnon" class="modal">
+      <div class="modal-content blue-text text-darken-2">
+        <div>
+          <h5 class="center-align">Ajouter un compagnon</h5>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s4 offset-s3">
+                <input id="search-traveler" type="text" class="validate" />
+                <label for="search-traveler">Nom, pseudo, adresse e-mail</label>
+              </div>
+              <div class="input-field col s2">
+                <a
+                  id="btn-add-traveler"
+                  class="waves-effect waves-light btn blue darken-1"
+                  ><i class="material-icons center-align"
+                    >youtube_searched_for</i
+                  ></a
+                >
+              </div>
+            </div>
+          </form>
+          <div>
             <div class="list">
               <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
               <p>Jean Bon</p>
               <div class="msg">
                 <a
                   class="waves-effect waves-light btn modal-trigger blue darken-2"
-                  href="#modal4">
-                  <i class="tiny material-icons">message</i>
+                  onclick="M.toast({html: 'Demande envoyée'})"
+                >
+                  <i class="tiny material-icons">add</i>
                 </a>
-              </div>   
+              </div>
+            </div>
+            <div class="list">
+              <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
+              <p>Mattias</p>
+              <div class="msg">
+                <a
+                  class="waves-effect waves-light btn modal-trigger blue darken-2"
+                  onclick="M.toast({html: 'Demande envoyée'})"
+                >
+                  <i class="tiny material-icons">add</i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>    
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="modal-close waves-effect waves-green btn-flat">Fermer</a>
       </div>
     </div>
-    <div id="modal4" class="modal">
+
+    <div id="ChatModal" class="modal">
       <div class="modal-content blue-text text-darken-2 right-align">
         <a class="modal-close waves-effect waves-blue btn-flat">
           <i class="tiny material-icons">close</i>
         </a>
         <div>
           <!-- <h5 class="center-align">Chatting box</h5> -->
-          <div class="chatlist"> 
+          <div class="chatlist">
             <div class="chat">
               <div class="chatheader valign-wrapper">
-                <img src="images/pp1.jpeg" alt="" class="circle" height="40px"/>
+                <img
+                  src="images/pp1.jpeg"
+                  alt=""
+                  class="circle"
+                  height="40px"
+                />
                 <p>Jean Bon</p>
               </div>
               <p>Here is a chatting message from friend.</p>
@@ -291,38 +404,64 @@
             <div class="chat">
               <div class="right-align chathostheader">
                 <p>You</p>
-                <img src="images/pp1.jpeg" alt="" class="circle" height="40px"/>
-              </div>   
+                <img
+                  src="images/pp1.jpeg"
+                  alt=""
+                  class="circle"
+                  height="40px"
+                />
+              </div>
               <p>Here is a chatting message from user.</p>
             </div>
           </div>
           <div class="input-field">
-            <input type="text" id="chat_input" placeholder="Type your message here...">
-            <button class="btn waves-effect waves-light blue" type="submit" name="action">Send</button>
-          </div>
-        </div> 
-      </div>
-    </div>
-
-    <!--Modal-share travel trigger-->
-    <a href="#modal-share-travel" id="btn-share-travel" class="btn-floating blue darken-2 modal-trigger"><i class="material-icons">add</i></a>
-    <!-- Modal share travel -->
-    <div id="modal-share-travel" class="modal modal-fixed-footer">
-      <div class="modal-content blue-text text-darken-2">
-        <div class="row">
-          <div id="partage_voyage">
-            <h4>Partagez votre voyage</h4>
-            <img id="image_avion" src="images/avion_papier.png" class="responsive_img" alt="Avion en papier"/>
+            <input
+              type="text"
+              id="chat_input"
+              placeholder="Type your message here..."
+            />
+            <button
+              class="btn waves-effect waves-light blue"
+              type="submit"
+              name="action"
+            >
+              Send
+            </button>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
       </div>
     </div>
 
     <div id="screen" class="row">
       <div id="feed" class="col s9">
+        <!--Modal-share travel trigger-->
+        <a
+          href="#modal-share-travel"
+          id="btn-share-travel"
+          class="btn-floating blue darken-2 modal-trigger"
+          ><i class="material-icons">add</i></a
+        >
+        <!-- Modal share travel -->
+        <div id="modal-share-travel" class="modal modal-fixed-footer">
+          <div class="modal-content blue-text text-darken-2">
+            <div class="row">
+              <div id="partage_voyage">
+                <h4>Partagez votre voyage</h4>
+                <img
+                  id="image_avion"
+                  src="images/avion_papier.png"
+                  class="responsive_img"
+                  alt="Avion en papier"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >Agree</a
+            >
+          </div>
+        </div>
         <div class="row">
           <div class="col s10 offset-s1">
             <div class="card row">
@@ -360,22 +499,20 @@
                 <ul class="right">
                   <li>
                     <a
-                      href="compte.html"
+                      href="#"
                       class="waves-effect waves-light btn blue darken-2"
                     >
                       <i class="material-icons">comment</i></a
                     >
                   </li>
                   <li>
-                    <a
-                      class="waves-effect waves-light btn blue darken-2 like"
-                    >
+                    <a class="waves-effect waves-light btn blue darken-2 like">
                       <i class="material-icons">favorite_border</i></a
                     >
                   </li>
                   <li>
                     <a
-                      href="compte.html"
+                      href="#"
                       class="waves-effect waves-light btn blue darken-2"
                     >
                       <i class="material-icons">share</i></a
@@ -423,22 +560,20 @@
                 <ul class="right">
                   <li>
                     <a
-                      href="compte.html"
+                      href="#"
                       class="waves-effect waves-light btn blue darken-2"
                     >
                       <i class="material-icons">comment</i></a
                     >
                   </li>
                   <li>
-                    <a
-                      class="waves-effect waves-light btn blue darken-2 like"
-                    >
+                    <a class="waves-effect waves-light btn blue darken-2 like">
                       <i class="material-icons">favorite_border</i></a
                     >
                   </li>
                   <li>
                     <a
-                      href="compte.html"
+                      href="#"
                       class="waves-effect waves-light btn blue darken-2"
                     >
                       <i class="material-icons">share</i></a
@@ -461,142 +596,165 @@
                 <br />
                 <i class="tiny material-icons">people</i> Paul, Camille
               </p>
-            </li></a
-          >
-          
+            </li>
+          </a>
+
           <!-- new travel group -->
-          <li class="collection-item avatar" style="visibility: hidden">
-            <i class="material-icons circle">folder</i>
-            <span class="title">Title</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-          </li>
+          <a id="newGroup" class="modal-trigger" href="#groupInfoPlus">
+            <li class="collection-item avatar">
+              <img src="images/st.png" alt="" class="circle" />
+              <span class="title">Paris :D</span>
+              <p class="groupInfo">
+                <i class="tiny material-icons">location_on</i> Paris
+                <br />
+                <i class="tiny material-icons">people</i> Paul, Camille
+              </p>
+            </li>
+          </a>
         </ul>
+
         <!--Modal-join-travel-trigger-->
-        <a href="#modal-join-travel" id="join-travel" class="btn-floating blue darken-2 right down modal-trigger"><i class="material-icons">add</i></a>
+        <a
+          href="#modal-join-travel"
+          id="join-travel"
+          class="btn-floating blue darken-2 right down modal-trigger"
+          ><i class="material-icons">add</i></a
+        >
         <!--join travel group-->
         <div id="modal-join-travel" class="modal">
           <div class="modal-content blue-text text-darken-2">
             <h5 class="center-align">Rejoindre un voyage</h5>
             <form class="col s12">
               <div class="row">
-                  <div class="input-field col s4 offset-s3">
-                      <input id="search-traveler" type="text" class="validate">
-                      <label for="search-traveler">Nom du groupe, destination, membre du groupe</label>
-                  </div>
-                  <div class="input-field col s2">
-                      <a id="btn-search-travel" class="waves-effect waves-light btn blue darken-1"><i class="material-icons center-align">youtube_searched_for</i></a>
-                  </div>
+                <div class="input-field col s4 offset-s3">
+                  <input id="search-traveler" type="text" class="validate" />
+                  <label for="search-traveler"
+                    >Nom du groupe, destination, membre du groupe</label
+                  >
+                </div>
+                <div class="input-field col s2">
+                  <a
+                    id="btn-search-travel"
+                    class="waves-effect waves-light btn blue darken-1"
+                    ><i class="material-icons center-align"
+                      >youtube_searched_for</i
+                    ></a
+                  >
+                </div>
               </div>
             </form>
           </div>
         </div>
 
-      <div id="groupInfoPlus" class="modal">
-        <div class="modal-content">
-          <div class="row">
-            <div id="dmGroup" class="col s4">
-              <div class="header">
-                <img src="images/st.png" alt="" class="circle" height="70px" />
-                <div>
-                  <h6>Sale Timbanque</h6>
+        <div id="groupInfoPlus" class="modal">
+          <div class="modal-content">
+            <div class="row">
+              <div id="dmGroup" class="col s4">
+                <div class="header">
+                  <img
+                    src="images/st.png"
+                    alt=""
+                    class="circle"
+                    height="70px"
+                  />
+                  <div>
+                    <h6>Sale Timbanque</h6>
 
-                  <div class="groupDMhead">
-                    <ul>
-                      <li>
-                        <img
-                          src="images/pp1.jpeg"
-                          alt=""
-                          class="circle"
-                          height="30px"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="images/pp1.jpeg"
-                          alt=""
-                          class="circle"
-                          height="30px"
-                        />
-                      </li>
-                      <li>
-                        <img
-                          src="images/pp1.jpeg"
-                          alt=""
-                          class="circle"
-                          height="30px"
-                        />
-                      </li>
-                    </ul>
+                    <div class="groupDMhead">
+                      <ul>
+                        <li>
+                          <img
+                            src="images/pp1.jpeg"
+                            alt=""
+                            class="circle"
+                            height="30px"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="images/pp1.jpeg"
+                            alt=""
+                            class="circle"
+                            height="30px"
+                          />
+                        </li>
+                        <li>
+                          <img
+                            src="images/pp1.jpeg"
+                            alt=""
+                            class="circle"
+                            height="30px"
+                          />
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <ul class="collection">
-                  <li class="collection-item avatar">
-                    <img src="images/pp1.jpeg" alt="" class="circle" />
-                    <span>Camille Honnete</span>
-                    <p>Blablabla</p>
-                  </li>
-                  <li class="collection-item avatar">
-                    <img src="images/pp1.jpeg" alt="" class="circle" />
-                    <span>Paul Emploi</span>
-                    <p>Blabalbalbablabl</p>
-                  </li>
-                  <li class="collection-item avatar">
-                    <img src="images/pp1.jpeg" alt="" class="circle" />
-                    <span>Camille Honnete</span>
-                    <p>Bloblobloblo</p>
-                  </li>
-                </ul>
                 <div>
-                  <div class="sender-area">
-                    <div class="input-place">
-                      <input
-                        placeholder="Send a message."
-                        class="send-input"
-                        type="text"
-                      />
-                      <div class="send">
-                        <svg
-                          class="send-icon"
-                          version="1.1"
-                          id="Capa_1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          x="0px"
-                          y="0px"
-                          viewBox="0 0 512 512"
-                          style="enable-background: new 0 0 512 512"
-                          xml:space="preserve"
-                        >
-                          <g>
+                  <ul class="collection">
+                    <li class="collection-item avatar">
+                      <img src="images/pp1.jpeg" alt="" class="circle" />
+                      <span>Camille Honnete</span>
+                      <p>Blablabla</p>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="images/pp1.jpeg" alt="" class="circle" />
+                      <span>Paul Emploi</span>
+                      <p>Blabalbalbablabl</p>
+                    </li>
+                    <li class="collection-item avatar">
+                      <img src="images/pp1.jpeg" alt="" class="circle" />
+                      <span>Camille Honnete</span>
+                      <p>Bloblobloblo</p>
+                    </li>
+                  </ul>
+                  <div>
+                    <div class="sender-area">
+                      <div class="input-place">
+                        <input
+                          placeholder="Send a message."
+                          class="send-input"
+                          type="text"
+                        />
+                        <div class="send">
+                          <svg
+                            class="send-icon"
+                            version="1.1"
+                            id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 512 512"
+                            style="enable-background: new 0 0 512 512"
+                            xml:space="preserve"
+                          >
                             <g>
-                              <path
-                                fill="#6B6C7B"
-                                d="M481.508,210.336L68.414,38.926c-17.403-7.222-37.064-4.045-51.309,8.287C2.86,59.547-3.098,78.551,1.558,96.808 L38.327,241h180.026c8.284,0,15.001,6.716,15.001,15.001c0,8.284-6.716,15.001-15.001,15.001H38.327L1.558,415.193 c-4.656,18.258,1.301,37.262,15.547,49.595c14.274,12.357,33.937,15.495,51.31,8.287l413.094-171.409 C500.317,293.862,512,276.364,512,256.001C512,235.638,500.317,218.139,481.508,210.336z"
-                              ></path>
+                              <g>
+                                <path
+                                  fill="#6B6C7B"
+                                  d="M481.508,210.336L68.414,38.926c-17.403-7.222-37.064-4.045-51.309,8.287C2.86,59.547-3.098,78.551,1.558,96.808 L38.327,241h180.026c8.284,0,15.001,6.716,15.001,15.001c0,8.284-6.716,15.001-15.001,15.001H38.327L1.558,415.193 c-4.656,18.258,1.301,37.262,15.547,49.595c14.274,12.357,33.937,15.495,51.31,8.287l413.094-171.409 C500.317,293.862,512,276.364,512,256.001C512,235.638,500.317,218.139,481.508,210.336z"
+                                ></path>
+                              </g>
                             </g>
-                          </g>
-                        </svg>
+                          </svg>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="infoVoyage" class="col s8">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptates nihil laudantium similique cumque sed! Est atque
-              asperiores dolorum odio, doloremque, repudiandae quisquam quo
-              dolore similique animi placeat voluptatem doloribus ad.
+              <div id="infoVoyage" class="col s8">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptates nihil laudantium similique cumque sed! Est atque
+                asperiores dolorum odio, doloremque, repudiandae quisquam quo
+                dolore similique animi placeat voluptatem doloribus ad.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <a class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          <div class="modal-footer">
+            <a class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
         </div>
       </div>
     </div>
