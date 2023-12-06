@@ -350,3 +350,8 @@
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
 }
+#photos > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
