@@ -333,8 +333,8 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s4 offset-s3">
-                <input id="search-traveler" type="text" class="validate" />
-                <label for="search-traveler">Nom, pseudo, adresse e-mail</label>
+                <input id="searchtraveler" type="text" class="validate" />
+                <label for="searchtraveler">Nom, pseudo, adresse e-mail</label>
               </div>
               <div class="input-field col s2">
                 <a
@@ -443,7 +443,7 @@
         >
         <!-- Modal share travel -->
         <div id="modal-share-travel" class="modal modal-fixed-footer">
-          <div class="modal-content blue-text text-darken-2">
+          <div id="modal-share-content" class="modal-content blue-text text-darken-2 col s12">
             <div class="row">
               <div id="partage_voyage">
                 <h4>Partagez votre voyage</h4>
@@ -454,12 +454,115 @@
                   alt="Avion en papier"
                 />
               </div>
+              <div class="row">
+                <div id="select-photos">
+                        <a id="btn-select-photos"
+                          class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"
+                          ><i class="material-icons left">get_app</i>Importer des photos</a
+                        >
+                </div>
+              </div>
+              <div class="row">
+                <div id="photos">
+                  <a class="col s2 offset-s1">
+                    <img class="selecte-img" src="images/thailande.jpg"/>
+                  </a>
+                  <a class="col s2 offset-s1">
+                    <i class="material-icons center black-text">photo</i>
+                  </a>
+                  <a class="col s2 offset-s1 center-align valign-wrapper">
+                    <i class="material-icons center black-text">photo</i>
+                  </a>
+                  <a class="col s2 offset-s1 center-align valign-wrapper">
+                    <i class="material-icons center black-text">photo</i>
+                  </a>
+                </div>
+              </div>
+              <div class="row" id="btn-loc-friend">
+                <a id="btn-select-photos"
+                  class="waves-effect waves-light btn blue darken-2 col s3 offset-s2"
+                  ><i class="material-icons left">maps</i>Selectionner un lieu</a
+                >
+                <a id="btn-select-photos"
+                  class="waves-effect waves-light btn blue darken-2 col s3 offset-s2 modal-trigger" href="#modal-compagnon"
+                  ><i class="material-icons left">add</i>Selectionner un compagnon</a
+                >
+            </div>
+              <div class="row">
+                <label for="description-textarea" id="description-label" class="col s8 offset-s1 blue-text text-darken-2">Tell everyone how it was :</label>
+                <textarea id="description-textarea" class="col s8 offset-s1">
+                  Best holidays ever...
+                </textarea>
+              </div>
             </div>
           </div>
           <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
-              >Agree</a
+            <a onclick="newPost()" href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >Parteger !</a
             >
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >Annuler</a
+            >
+          </div>
+        </div>
+        <div class="row" hidden id="newPost">
+          <div class="col s10 offset-s1">
+            <div class="card row">
+              <div class="valign-wrappers">
+                <div class="col s1">
+                  <img
+                    src="images/pp1.jpeg"
+                    alt=""
+                    class="circle responsive-img"
+                  />
+                </div>
+                <div class="col s10">
+                  <h6 class="black-text">Vous</h6>
+                </div>
+                <div class="col s10">
+                  <span class="black-text"
+                      ><i class="tiny material-icons">location_on</i> Thailande
+                  </span>
+                  <span class="black-text">
+                    <i class="tiny material-icons">people</i>
+                    Bernadette
+                  </span>
+                </div>
+              </div>
+              <div class="row col s12">
+                <div class="card-image col s8">
+                  <img src="images/thailande.jpg" />
+                </div>
+                <div class="card-content">
+                  <p>Vacances paradisiaques au bout du monde !</p>
+                </div>
+              </div>
+              <div id="rsbutton">
+                <ul class="right">
+                  <li>
+                    <a
+                      href="#"
+                      class="waves-effect waves-light btn blue darken-2"
+                    >
+                      <i class="material-icons">comment</i></a
+                    >
+                  </li>
+                  <li>
+                    <a class="waves-effect waves-light btn blue darken-2 like">
+                      <i class="material-icons">favorite_border</i></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="waves-effect waves-light btn blue darken-2"
+                    >
+                      <i class="material-icons">share</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -627,8 +730,8 @@
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s4 offset-s3">
-                  <input id="search-traveler" type="text" class="validate" />
-                  <label for="search-traveler"
+                  <input id="traveler" type="text" class="validate" />
+                  <label for="traveler" class="blue-text text-darken-2"
                     >Nom du groupe, destination, membre du groupe</label
                   >
                 </div>
@@ -638,8 +741,7 @@
                     class="waves-effect waves-light btn blue darken-1"
                     ><i class="material-icons center-align"
                       >youtube_searched_for</i
-                    ></a
-                  >
+                    ></a>
                 </div>
               </div>
             </form>

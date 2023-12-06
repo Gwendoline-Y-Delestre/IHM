@@ -48,3 +48,7 @@ document.getElementById("btn-etape").addEventListener("click", function () {
 function NewGroup() {
   document.getElementById("newGroup").style.visibility = 'visible';
 }
+
+function newPost() {
+  document.getElementById("newPost").hidden=false;
+}

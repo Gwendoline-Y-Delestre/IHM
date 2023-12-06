@@ -300,8 +300,36 @@
   display: flex;
   align-items: center;
 }
-
 #newGroup {
   visibility: hidden;
   margin: 0.5em;
+}
+#photos > a{
+    background-color: lightgray;
+    height: 11em;
+    width: 11em;
+    padding:0;
+}
+#photos, #select-photos, #btn-loc-friend {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.selecte-img{
+  height: 100%;
+  width: 100%;
+}
+#description-label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1%;
+}
+
+#description-textarea {
+  font-size: 0.8rem;
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
 }
