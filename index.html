@@ -415,11 +415,7 @@
             </div>
           </div>
           <div class="input-field">
-            <input
-              type="text"
-              id="chat_input"
-              placeholder="Type your message here..."
-            />
+            <input type="text" id="chat_input" placeholder="Message ..." />
             <button
               class="btn waves-effect waves-light blue"
               type="submit"
@@ -443,7 +439,10 @@
         >
         <!-- Modal share travel -->
         <div id="modal-share-travel" class="modal modal-fixed-footer">
-          <div id="modal-share-content" class="modal-content blue-text text-darken-2 col s12">
+          <div
+            id="modal-share-content"
+            class="modal-content blue-text text-darken-2 col s12"
+          >
             <div class="row">
               <div id="partage_voyage">
                 <h4>Partagez votre voyage</h4>
@@ -456,16 +455,18 @@
               </div>
               <div class="row">
                 <div id="select-photos">
-                        <a id="btn-select-photos"
-                          class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"
-                          ><i class="material-icons left">get_app</i>Importer des photos</a
-                        >
+                  <a
+                    id="btn-select-photos"
+                    class="waves-effect waves-light btn blue darken-2 col s4 offset-s4"
+                    ><i class="material-icons left">get_app</i>Importer des
+                    photos</a
+                  >
                 </div>
               </div>
               <div class="row">
                 <div id="photos">
                   <a class="col s2 offset-s1">
-                    <img class="selecte-img" src="images/thailande.jpg"/>
+                    <img class="selecte-img" src="images/thailande.jpg" />
                   </a>
                   <a class="col s2 offset-s1">
                     <i class="material-icons center black-text">photo</i>
@@ -479,17 +480,27 @@
                 </div>
               </div>
               <div class="row" id="btn-loc-friend">
-                <a id="btn-select-photos"
+                <a
+                  id="btn-select-photos"
                   class="waves-effect waves-light btn blue darken-2 col s3 offset-s2"
-                  ><i class="material-icons left">maps</i>Selectionner un lieu</a
+                  ><i class="material-icons left">maps</i>Selectionner un
+                  lieu</a
                 >
-                <a id="btn-select-photos"
-                  class="waves-effect waves-light btn blue darken-2 col s3 offset-s2 modal-trigger" href="#modal-compagnon"
-                  ><i class="material-icons left">add</i>Selectionner un compagnon</a
+                <a
+                  id="btn-select-photos"
+                  class="waves-effect waves-light btn blue darken-2 col s3 offset-s2 modal-trigger"
+                  href="#modal-compagnon"
+                  ><i class="material-icons left">add</i>Selectionner un
+                  compagnon</a
                 >
-            </div>
+              </div>
               <div class="row">
-                <label for="description-textarea" id="description-label" class="col s8 offset-s1 blue-text text-darken-2">Tell everyone how it was :</label>
+                <label
+                  for="description-textarea"
+                  id="description-label"
+                  class="col s8 offset-s1 blue-text text-darken-2"
+                  >Tell everyone how it was :</label
+                >
                 <textarea id="description-textarea" class="col s8 offset-s1">
                   Best holidays ever...
                 </textarea>
@@ -497,7 +508,10 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a onclick="newPost()" href="#!" class="modal-close waves-effect waves-green btn-flat"
+            <a
+              onclick="newPost()"
+              href="#!"
+              class="modal-close waves-effect waves-green btn-flat"
               >Parteger !</a
             >
             <a href="#!" class="modal-close waves-effect waves-green btn-flat"
@@ -521,7 +535,7 @@
                 </div>
                 <div class="col s10">
                   <span class="black-text"
-                      ><i class="tiny material-icons">location_on</i> Thailande
+                    ><i class="tiny material-icons">location_on</i> Thailande
                   </span>
                   <span class="black-text">
                     <i class="tiny material-icons">people</i>
@@ -741,7 +755,8 @@
                     class="waves-effect waves-light btn blue darken-1"
                     ><i class="material-icons center-align"
                       >youtube_searched_for</i
-                    ></a>
+                    ></a
+                  >
                 </div>
               </div>
             </form>
@@ -751,7 +766,7 @@
         <div id="groupInfoPlus" class="modal">
           <div class="modal-content">
             <div class="row">
-              <div id="dmGroup" class="col s4">
+              <div id="dmGroup" class="pannel col s4">
                 <div class="header">
                   <img
                     src="images/st.png"
@@ -811,52 +826,74 @@
                     </li>
                   </ul>
                   <div>
-                    <div class="sender-area">
-                      <div class="input-place">
-                        <input
-                          placeholder="Send a message."
-                          class="send-input"
-                          type="text"
-                        />
-                        <div class="send">
-                          <svg
-                            class="send-icon"
-                            version="1.1"
-                            id="Capa_1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            x="0px"
-                            y="0px"
-                            viewBox="0 0 512 512"
-                            style="enable-background: new 0 0 512 512"
-                            xml:space="preserve"
-                          >
-                            <g>
-                              <g>
-                                <path
-                                  fill="#6B6C7B"
-                                  d="M481.508,210.336L68.414,38.926c-17.403-7.222-37.064-4.045-51.309,8.287C2.86,59.547-3.098,78.551,1.558,96.808 L38.327,241h180.026c8.284,0,15.001,6.716,15.001,15.001c0,8.284-6.716,15.001-15.001,15.001H38.327L1.558,415.193 c-4.656,18.258,1.301,37.262,15.547,49.595c14.274,12.357,33.937,15.495,51.31,8.287l413.094-171.409 C500.317,293.862,512,276.364,512,256.001C512,235.638,500.317,218.139,481.508,210.336z"
-                                ></path>
-                              </g>
-                            </g>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
+                    <input
+                      id="sendGroupMessage"
+                      type="text"
+                      class="validate"
+                      placeholder="Message ..."
+                    />
                   </div>
                 </div>
               </div>
-              <div id="infoVoyage" class="col s8">
+              <div id="infoVoyage" class="pannel col s12">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Voluptates nihil laudantium similique cumque sed! Est atque
                 asperiores dolorum odio, doloremque, repudiandae quisquam quo
-                dolore similique animi placeat voluptatem doloribus ad.
+                dolore similique animi placeat voluptatem doloribus ad. Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+                nihil laudantium similique cumque sed! Est atque asperiores
+                dolorum odio, doloremque, repudiandae quisquam quo dolore
+                similique animi placeat voluptatem doloribus ad. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Voluptates nihil
+                laudantium similique cumque sed! Est atque asperiores dolorum
+                odio, doloremque, repudiandae quisquam quo dolore similique
+                animi placeat voluptatem doloribus ad. Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Voluptates nihil laudantium
+                similique cumque sed! Est atque asperiores dolorum odio,
+                doloremque, repudiandae quisquam quo dolore similique animi
+                placeat voluptatem doloribus ad.
               </div>
             </div>
           </div>
-          <div class="modal-footer">
+          <!-- <div class="modal-footer">
             <a class="modal-close waves-effect waves-green btn-flat">Agree</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

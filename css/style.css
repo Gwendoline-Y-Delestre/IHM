@@ -68,6 +68,21 @@
   margin: 0px;
 }
 
+.panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  height: 400px;
+}
+
+#dmGroup {
+  background-color: #f0f0f0;
+}
+
+#infoVoyage {
+  background-color: #e0e0e0;
+}
+
 .groupDMhead ul {
   display: flex;
 }
@@ -304,17 +319,19 @@
   visibility: hidden;
   margin: 0.5em;
 }
-#photos > a{
-    background-color: lightgray;
-    height: 11em;
-    width: 11em;
-    padding:0;
+#photos > a {
+  background-color: lightgray;
+  height: 11em;
+  width: 11em;
+  padding: 0;
 }
-#photos, #select-photos, #btn-loc-friend {
+#photos,
+#select-photos,
+#btn-loc-friend {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.selecte-img{
+.selecte-img {
   height: 100%;
   width: 100%;
 }
