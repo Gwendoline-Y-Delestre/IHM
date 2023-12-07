@@ -460,6 +460,7 @@
   border-bottom: #1976d2 1px solid;
   border-top: #1976d2 1px solid;
   margin: 0;
+  overflow-y: auto;
 }
 
 table,
@@ -507,4 +508,5 @@ input::placeholder {
   border-radius: 10px;
   min-height: 65%;
   min-height: 85%;
+  overflow-y: hidden;
 }
