@@ -26,7 +26,10 @@
             <a
               class="waves-effect waves-light btn modal-trigger blue darken-2"
               href="#modal2"
-            >
+              id="btn-friend"
+            >    
+       
+              <span id="notification-badge" class="new badge red" style="display: none;"></span>  
               <i class="tiny material-icons">group</i>
             </a>
           </li>
@@ -72,7 +75,7 @@
                         class="waves-effect waves-light btn modal-trigger blue darken-2"
                         onclick="M.toast({html: 'Demande envoyée'})"
                       >
-                        <i class="tiny material-icons">add</i>
+                        <i class="tiny material-icons modal-close" id="btn-add">add</i>
                       </a>
                     </div>
                   </div>
@@ -297,7 +300,8 @@
         <div>
           <h5 class="center-align">Liste des amis</h5>
           <div class="listeAmi">
-            <div class="list">
+
+            <div class="list" id="newFriend"  style="display: none;">
               <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
               <p>Jean Bon</p>
               <div class="msg">
@@ -431,12 +435,15 @@
     <div id="screen" class="row">
       <div id="feed" class="col s9">
         <!--Modal-share travel trigger-->
-        <a
-          href="#modal-share-travel"
-          id="btn-share-travel"
-          class="btn-floating blue darken-2 modal-trigger"
-          ><i class="material-icons">add</i></a
-        >
+        <div class="btn-share-travel">
+          <a
+            href="#modal-share-travel"
+            id="btn-share-travel"
+            class="btn-floating blue darken-2 modal-trigger"
+            ><i class="material-icons">add</i></a
+          >
+        </div>
+        
         <!-- Modal share travel -->
         <div id="modal-share-travel" class="modal modal-fixed-footer">
           <div
@@ -750,6 +757,7 @@
                   >
                 </div>
                 <div class="input-field col s2">
+                
                   <a
                     id="btn-search-travel"
                     class="waves-effect waves-light btn blue darken-1"
@@ -760,6 +768,32 @@
                 </div>
               </div>
             </form>
+           
+            <div id="new-travel" style="display: none;"> 
+              <p>Voyage trouvé :</p>
+              <div class="new-travel-found">
+                <div style="flex-grow: 1;">
+                  <ul class="collection">
+                    <li class="collection-item avatar">
+                      <img src="images/st.png" alt="" class="circle" />
+                      <span class="title">Paris :D</span>
+                      <p class="groupInfo">
+                        <i class="tiny material-icons">location_on</i> Paris
+                        <br />
+                        <i class="tiny material-icons">people</i> Paul, Camille
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <a
+                    class="waves-effect waves-light btn modal-trigger blue darken-2 modal-close"
+                    onclick="NewGroup(), M.toast({html: 'Demande envoyée'})">
+                    <i class="tiny material-icons" id="btn-voyage">add</i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

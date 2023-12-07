@@ -52,3 +52,32 @@ function NewGroup() {
 function newPost() {
   document.getElementById("newPost").hidden=false;
 }
+
+
+
+document.getElementById('btn-add').addEventListener('click', function() {
+  var badge = document.getElementById('notification-badge');
+  badge.style.display = 'block';
+
+  var friend = document.getElementById('newFriend');
+  friend.style.display = 'flex';
+
+  var modals = document.querySelectorAll('.modal');
+  modals.forEach(function(modal) {
+      var instance = M.Modal.getInstance(modal);
+      instance.close();
+  });
+
+});
+
+
+document.getElementById('btn-friend').addEventListener('click', function() {
+  var badge = document.getElementById('notification-badge');
+  badge.style.display = 'none';
+});
+
+
+document.getElementById('btn-search-travel').addEventListener('click', function() {
+  var travel = document.getElementById('new-travel');
+  travel.style.display = 'block';
+});

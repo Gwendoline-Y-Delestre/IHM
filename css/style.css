@@ -355,3 +355,36 @@
   align-items: center;
   justify-content: center;
 }
+
+
+
+.btn-share-travel{
+  display: flex;
+  justify-content: flex-end; 
+  padding-top: 5px;
+}
+
+
+#btn-friend{
+  position: relative; 
+  width: 80px; 
+  height: 36px; 
+  padding: 0; 
+  overflow: visible; 
+}
+
+
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  --border-radius: 30%;
+}
+
+
+
+.new-travel-found{
+  align-items: center;
+  display: flex;
+}
