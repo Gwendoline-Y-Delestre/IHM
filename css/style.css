@@ -321,8 +321,8 @@
 }
 #photos > a {
   background-color: lightgray;
-  height: 11em;
-  width: 11em;
+  height: 16%;
+  width: 16%;
   padding: 0;
 }
 #photos,
@@ -350,30 +350,25 @@
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
 }
-#photos > a{
+#photos > a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-
-.btn-share-travel{
+.btn-share-travel {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   padding-top: 5px;
 }
 
-
-#btn-friend{
-  position: relative; 
-  width: 80px; 
-  height: 36px; 
-  padding: 0; 
-  overflow: visible; 
+#btn-friend {
+  position: relative;
+  width: 80px;
+  height: 36px;
+  padding: 0;
+  overflow: visible;
 }
-
-
 
 .badge {
   position: absolute;
@@ -382,18 +377,17 @@
   --border-radius: 30%;
 }
 
-
-
-.new-travel-found{
+.new-travel-found {
   align-items: center;
   display: flex;
 }
 
-#add-etape, #add-compagnon{
-  margin-top:4%;
-  margin-bottom:4%;
+#add-etape,
+#add-compagnon {
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
-.modal-close{
-  background-color: #1976d2 ;
+.modal-close {
+  background-color: #1976d2;
   color: white;
 }

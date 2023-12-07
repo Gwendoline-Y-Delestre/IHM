@@ -27,9 +27,12 @@
               class="waves-effect waves-light btn modal-trigger blue darken-2"
               href="#modal2"
               id="btn-friend"
-            >    
-       
-              <span id="notification-badge" class="new badge red" style="display: none;"></span>  
+            >
+              <span
+                id="notification-badge"
+                class="new badge red"
+                style="display: none"
+              ></span>
               <i class="tiny material-icons">group</i>
             </a>
           </li>
@@ -74,8 +77,9 @@
                       <a
                         class="waves-effect waves-light btn modal-trigger blue darken-2"
                         onclick="M.toast({html: 'Demande envoyée'})"
+                        id="btn-add"
                       >
-                        <i class="tiny material-icons modal-close" id="btn-add">add</i>
+                        <i class="tiny material-icons modal-close">add</i>
                       </a>
                     </div>
                   </div>
@@ -115,7 +119,7 @@
                       </div>
                       <div class="col s2">
                         <label>
-                          <input name="group1" type="radio" checked/>
+                          <input name="group1" type="radio" checked />
                           <span>Public</span>
                         </label>
                       </div>
@@ -264,12 +268,14 @@
                           >Heure</label
                         >
                       </div>
-                    <div class="input-field col s4">
-                      <input id="travel_place" type="text" class="validate" />
-                      <label for="travel_place" class="blue-text text-darken-2"
-                        >Lieu</label
-                      >
-                    </div>
+                      <div class="input-field col s4">
+                        <input id="travel_place" type="text" class="validate" />
+                        <label
+                          for="travel_place"
+                          class="blue-text text-darken-2"
+                          >Lieu</label
+                        >
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -312,8 +318,7 @@
         <div>
           <h5 class="center-align">Liste des amis</h5>
           <div class="listeAmi">
-
-            <div class="list" id="newFriend"  style="display: none;">
+            <div class="list" id="newFriend" style="display: none">
               <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
               <p>Jean Bon</p>
               <div class="msg">
@@ -455,7 +460,7 @@
             ><i class="material-icons">add</i></a
           >
         </div>
-        
+
         <!-- Modal share travel -->
         <div id="modal-share-travel" class="modal modal-fixed-footer">
           <div
@@ -488,29 +493,25 @@
                     <img class="selecte-img" src="images/thailande.jpg" />
                   </a>
                   <a class="col s2 offset-s1">
-                    <i class="material-icons center black-text">photo</i>
+                    <i class="material-icons center black-text large">photo</i>
                   </a>
                   <a class="col s2 offset-s1">
-                    <i class="material-icons center black-text">photo</i>
+                    <i class="material-icons center black-text large">photo</i>
                   </a>
                   <a class="col s2 offset-s1">
-                    <i class="material-icons center black-text">photo</i>
+                    <i class="material-icons center black-text large">photo</i>
                   </a>
                 </div>
               </div>
               <div class="row" id="btn-loc-friend">
                 <a
-                  id="btn-select-photos"
                   class="waves-effect waves-light btn blue darken-2 col s3 offset-s2"
-                  ><i class="material-icons left">maps</i>Selectionner un
-                  lieu</a
+                  ><i class="material-icons left">maps</i>Lieu</a
                 >
                 <a
-                  id="btn-select-photos"
                   class="waves-effect waves-light btn blue darken-2 col s3 offset-s2 modal-trigger"
                   href="#modal-compagnon"
-                  ><i class="material-icons left">add</i>Selectionner un
-                  compagnon</a
+                  ><i class="material-icons left">add</i>Compagnon</a
                 >
               </div>
               <div class="row">
@@ -530,7 +531,7 @@
             <a
               onclick="newPost()"
               href="#!"
-              class="modal-close waves-effect waves-green btn-flat "
+              class="modal-close waves-effect waves-green btn-flat"
               >Partager !</a
             >
             <a href="#!" class="modal-close waves-effect waves-green btn-flat"
@@ -769,7 +770,6 @@
                   >
                 </div>
                 <div class="input-field col s2">
-                
                   <a
                     id="btn-search-travel"
                     class="waves-effect waves-light btn blue darken-1"
@@ -780,11 +780,11 @@
                 </div>
               </div>
             </form>
-           
-            <div id="new-travel" style="display: none;"> 
+
+            <div id="new-travel" style="display: none">
               <p>Voyage trouvé :</p>
               <div class="new-travel-found">
-                <div style="flex-grow: 1;">
+                <div style="flex-grow: 1">
                   <ul class="collection">
                     <li class="collection-item avatar">
                       <img src="images/st.png" alt="" class="circle" />
@@ -800,7 +800,8 @@
                 <div>
                   <a
                     class="waves-effect waves-light btn modal-trigger blue darken-2 modal-close"
-                    onclick="NewGroup(), M.toast({html: 'Demande envoyée'})">
+                    onclick="NewGroup(), M.toast({html: 'Demande envoyée'})"
+                  >
                     <i class="tiny material-icons" id="btn-voyage">add</i>
                   </a>
                 </div>
