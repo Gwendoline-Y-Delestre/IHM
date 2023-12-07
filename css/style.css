@@ -277,7 +277,7 @@
   background-color: #828e9e6c;
   padding: 5%;
   border-radius: 5px;
-  min-height: 475px;
+  min-height: 455px;
   overflow-y: auto;
 }
 
@@ -290,8 +290,10 @@
 }
 
 .chat {
-  background-color: #b6d6ff;
+  /* background-color: #b6d6ff; */
   border-radius: 7px;
+  margin-bottom: 2%;
+  max-width: 70%;
 }
 
 .chatheader {
@@ -420,6 +422,8 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 5px;
+  position: sticky;
+  top: 5px;
 }
 
 #btn-friend {
@@ -508,4 +512,8 @@ input::placeholder {
   border-radius: 10px;
   min-height: 65%;
   min-height: 85%;
+}
+
+p {
+  padding-left: 3%;
 }
