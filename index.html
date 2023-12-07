@@ -533,7 +533,7 @@
               type="submit"
               name="action"
             >
-              Send
+              Envoyer
             </button>
           </div>
         </div>
@@ -902,17 +902,20 @@
         </div>
 
         <div id="groupInfoPlus" class="modal">
-          <div class="modal-content">
-            <div class="row">
-              <div id="dmGroup" class="pannel col s4">
-                <div class="header">
-                  <img
-                    src="images/st.png"
-                    alt=""
-                    class="circle"
-                    height="70px"
-                  />
-                  <div>
+          <div class="modal-content" id="modal-content">
+            <div class="panel" id="left-panel">
+              <div id="dmGroup">
+                <div class="headerChatGroup">
+                  <div class="imgGroup">
+                    <img
+                      src="images/st.png"
+                      alt=""
+                      class="circle"
+                      height="70px"
+                    />
+                  </div>
+
+                  <div class="groupHeader center">
                     <h6>Sale Timbanque</h6>
 
                     <div class="groupDMhead">
@@ -945,93 +948,172 @@
                     </div>
                   </div>
                 </div>
+                <div class="chatlist">
+                  <div class="chat">
+                    <div class="chatheader valign-wrapper">
+                      <img
+                        src="images/pp1.jpeg"
+                        alt=""
+                        class="circle"
+                        height="40px"
+                      />
+                      <p>Camille</p>
+                    </div>
+                    <p>Trop HATE!!!!!</p>
+                  </div>
+
+                  <div class="chat">
+                    <div class="right-align chathostheader">
+                      <p>You</p>
+                      <img
+                        src="images/pp1.jpeg"
+                        alt=""
+                        class="circle"
+                        height="40px"
+                      />
+                    </div>
+                    <p>Here is a chatting message from user.</p>
+                  </div>
+                  <div class="chat">
+                    <div class="chatheader valign-wrapper">
+                      <img
+                        src="images/pp1.jpeg"
+                        alt=""
+                        class="circle"
+                        height="40px"
+                      />
+                      <p>Camille</p>
+                    </div>
+                    <p>Trop HATE!!!!!</p>
+                  </div>
+                  <div class="chat">
+                    <div class="chatheader valign-wrapper">
+                      <img
+                        src="images/pp1.jpeg"
+                        alt=""
+                        class="circle"
+                        height="40px"
+                      />
+                      <p>Camille</p>
+                    </div>
+                    <p>Trop HATE!!!!!</p>
+                  </div>
+                </div>
+                <div class="input-field row" style="padding: 5px">
+                  <input
+                    class="col s10"
+                    type="text"
+                    id="chat_input"
+                    placeholder="Message ..."
+                  />
+                  <button
+                    class="btn waves-effect waves-light blue col s2"
+                    type="submit"
+                    name="action"
+                  >
+                    <i class="material-icons">send</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="panel" id="right-panel">
+              <div id="infosVoyage">
+                <div class="row">
+                  <p class="green-text col s3">Public</p>
+                  <h2 class="col s9">Sale Timbanque</h2>
+                </div>
                 <div>
-                  <ul class="collection">
-                    <li class="collection-item avatar">
-                      <img src="images/pp1.jpeg" alt="" class="circle" />
-                      <span>Camille Honnete</span>
-                      <p>Blablabla</p>
-                    </li>
-                    <li class="collection-item avatar">
-                      <img src="images/pp1.jpeg" alt="" class="circle" />
-                      <span>Paul Emploi</span>
-                      <p>Blabalbalbablabl</p>
-                    </li>
-                    <li class="collection-item avatar">
-                      <img src="images/pp1.jpeg" alt="" class="circle" />
-                      <span>Camille Honnete</span>
-                      <p>Bloblobloblo</p>
-                    </li>
-                  </ul>
+                  <table>
+                    <tr>
+                      <td>
+                        <i class="material-icons">location_on</i> Martinique
+                      </td>
+                      <td>
+                        <i class="material-icons">people</i> Camille, Paul, Vous
+                      </td>
+                      <td>
+                        <i class="material-icons">date_range</i>
+                        04/04/2023 - 17/04/2023
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="infoVoyage">
                   <div>
-                    <input
-                      id="sendGroupMessage"
-                      type="text"
-                      class="validate"
-                      placeholder="Message ..."
-                    />
+                    <h3>Transports</h3>
+                    <div class="center transports">
+                      <div class="transport">
+                        <div class="left"><h6>Transport 1 Aller :</h6></div>
+                        <div class="transportInfo">
+                          <p>
+                            <i class="material-icons">flight</i> LM14F53
+                            <i class="material-icons">euro_symbol</i> 512 €/pers
+                          </p>
+                          <p>
+                            <i class="material-icons">date_range</i> 04/04/2023
+                            <i class="material-icons"> access_time</i> 12:30
+                          </p>
+
+                          <p>
+                            <i class="material-icons">location_on</i> Roissy CDG
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="transport">
+                        <div class="left"><h6>Transport 1 Aller :</h6></div>
+                        <div class="transportInfo">
+                          <p>
+                            <i class="material-icons">flight</i> LM15F54
+                            <i class="material-icons">euro_symbol</i> 500 €/pers
+                          </p>
+                          <p>
+                            <i class="material-icons">date_range</i> 17/04/2023
+                            <i class="material-icons"> access_time</i> 16:00
+                          </p>
+
+                          <p>
+                            <i class="material-icons">location_on</i> Aimé
+                            Césaire
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3>Logement</h3>
+                    <div class="center transports">
+                      <div class="transport">
+                        <div class="left"><h6>Logement 1 :</h6></div>
+                        <div class="transportInfo">
+                          <p>
+                            <i class="material-icons">home</i> AirBnB 17MST32
+                            <i class="material-icons">euro_symbol</i> 70 €/nuit
+                          </p>
+                          <p>
+                            Du
+                            <i class="material-icons">date_range</i> 04/04/2023
+                            <i class="material-icons"> access_time</i> 15:00
+                          </p>
+                          <p>
+                            Au
+                            <i class="material-icons">date_range</i> 17/04/2023
+                            <i class="material-icons"> access_time</i> 10:00
+                          </p>
+
+                          <p>
+                            <i class="material-icons">location_on</i> 81 rue
+                            Lamartine, Fort-de-France 97200, Martinique
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div id="infoVoyage" class="pannel col s12">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptates nihil laudantium similique cumque sed! Est atque
-                asperiores dolorum odio, doloremque, repudiandae quisquam quo
-                dolore similique animi placeat voluptatem doloribus ad. Lorem
-                ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-                nihil laudantium similique cumque sed! Est atque asperiores
-                dolorum odio, doloremque, repudiandae quisquam quo dolore
-                similique animi placeat voluptatem doloribus ad. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Voluptates nihil
-                laudantium similique cumque sed! Est atque asperiores dolorum
-                odio, doloremque, repudiandae quisquam quo dolore similique
-                animi placeat voluptatem doloribus ad. Lorem ipsum dolor, sit
-                amet consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Voluptates nihil laudantium
-                similique cumque sed! Est atque asperiores dolorum odio,
-                doloremque, repudiandae quisquam quo dolore similique animi
-                placeat voluptatem doloribus ad.
-              </div>
             </div>
           </div>
-          <!-- <div class="modal-footer">
-            <a class="modal-close waves-effect waves-green btn-flat">Agree</a>
-          </div> -->
         </div>
       </div>
     </div>

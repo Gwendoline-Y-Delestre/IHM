@@ -25,16 +25,18 @@
 .title {
   color: #444;
 }
-.header {
+.headerChatGroup {
   display: flex;
 }
-.header img {
-  margin-right: 50px;
-  color: #444;
+
+.imgGroup {
+  max-width: 70px;
+  max-height: 70px;
 }
-/* .header h6 {
-  padding-top: 10px;
-} */
+
+.groupHeader {
+  width: 100%;
+}
 
 .groupInfo {
   color: #888;
@@ -61,41 +63,68 @@
   margin-left: 1%;
   width: 73%;
   overflow-x: auto;
+  min-height: 85%;
 }
 
 .plus {
   padding: 0px;
   margin: 0px;
 }
+#modal-content {
+  display: flex;
+  height: 80%;
+  padding: 0;
+}
 
 .panel {
   flex: 1;
-  overflow-y: auto;
-  padding: 10px;
-  height: 400px;
+  padding: 1%;
 }
 
-#dmGroup {
-  background-color: #f0f0f0;
+#left-panel {
+  max-width: 35%;
+  overflow-y: hidden;
+  /* border-right: 1px gray solid; */
+  background-color: #828e9e6c;
 }
 
-#infoVoyage {
+#right-panel {
   background-color: #e0e0e0;
+  max-width: 75%;
+  overflow-y: hidden;
+}
+#dmGroup {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.infosVoyage {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
+.infoVoyage {
+  overflow-y: auto;
+  height: 430px;
+}
+
+.transports {
+  margin-left: 5%;
+}
+.transport {
+  display: flex;
+  margin-left: 5%;
+}
+.transportInfo {
+  margin-left: 5%;
+}
 .groupDMhead ul {
   display: flex;
+  padding-left: 33%;
 }
 .groupDMhead li {
   max-width: 35px;
-}
-
-.sender-area {
-  background-color: #343541;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  border-radius: 8px;
 }
 
 .message {
@@ -234,7 +263,7 @@
   background-color: #828e9e6c;
   padding: 5%;
   border-radius: 5px;
-  height: 70vh;
+  height: 430px;
   overflow-y: auto;
 }
 
@@ -430,4 +459,8 @@ td {
 
 .vLign h6 {
   vertical-align: bottom;
+}
+
+input::placeholder {
+  color: #2e2f3a;
 }
