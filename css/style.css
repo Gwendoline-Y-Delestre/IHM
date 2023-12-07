@@ -388,3 +388,12 @@
   align-items: center;
   display: flex;
 }
+
+#add-etape, #add-compagnon{
+  margin-top:4%;
+  margin-bottom:4%;
+}
+.modal-close{
+  background-color: #1976d2 ;
+  color: white;
+}
