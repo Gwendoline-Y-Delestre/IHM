@@ -62,7 +62,7 @@
   z-index: 12;
   margin-left: 1%;
   width: 73%;
-  overflow-x: auto;
+  overflow-y: hidden;
   min-height: 85%;
 }
 
@@ -72,7 +72,7 @@
 }
 #modal-content {
   display: flex;
-  height: 80%;
+  /* height: 700px; */
   padding: 0;
 }
 
@@ -215,12 +215,12 @@
   width: 0px;
 }
 
-#modal2 {
+#chatPerso {
   top: 0;
   margin-left: 0%;
   margin-top: 0%;
   width: 25%;
-  max-height: 100vh;
+  max-height: 89vh;
 }
 
 #modal4 {
@@ -256,7 +256,6 @@
   padding-left: 3%;
 }
 
-
 .list p {
   width: 40%;
   font-size: medium;
@@ -270,7 +269,19 @@
   padding-left: 10%;
 }
 
+#ChatModal {
+  overflow-y: hidden;
+}
+
 .chatlist {
+  background-color: #828e9e6c;
+  padding: 5%;
+  border-radius: 5px;
+  min-height: 475px;
+  overflow-y: auto;
+}
+
+.chatlistGroup {
   background-color: #828e9e6c;
   padding: 5%;
   border-radius: 5px;
@@ -306,9 +317,9 @@
 
 .chat p {
   text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
 }
 
 .input-field {
@@ -441,8 +452,9 @@
   color: white;
 }
 #accountModal {
-  width: 1400px !important;
-  width: 55%;
+  /* width: 1400px !important; */
+  width: 85%;
+  height: 85%;
 }
 #contentAccount {
   border-bottom: #1976d2 1px solid;
@@ -476,21 +488,23 @@ input::placeholder {
   color: #2e2f3a;
 }
 
-.commentaire{
+.commentaire {
   position: absolute;
-  right:10%;
-  padding-left:5%;
-  padding-right:5%;
+  right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: white;
-  border-radius : 10px;
-  width:60%;
-  height:5%;
+  border-radius: 10px;
+  width: 60%;
+  height: 5%;
 }
 
-#newComment{
+#newComment {
   display: none;
 }
 
-.modal{
+.modal {
   border-radius: 10px;
+  min-height: 65%;
+  min-height: 85%;
 }

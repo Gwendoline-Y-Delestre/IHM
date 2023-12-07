@@ -25,7 +25,7 @@
           <li>
             <a
               class="waves-effect waves-light btn modal-trigger blue darken-2"
-              href="#modal2"
+              href="#chatPerso"
               id="btn-friend"
             >
               <span
@@ -198,33 +198,42 @@
                     <div class="row">
                       <h4 class="valign-wraper center-align">Transport :</h4>
                     </div>
-                    <div class="valign-wrapper center-align">
-                      <label class="m-r-2">
-                        <input type="checkbox" class="filled-in" />
-                        <span
-                          ><i class="material-icons">directions_car</i></span
-                        >
-                      </label>
-                      <label class="m-r-2">
-                        <input type="checkbox" class="filled-in" />
-                        <span
-                          ><i class="material-icons">directions_bus</i></span
-                        >
-                      </label>
-                      <label class="m-r-2">
-                        <input type="checkbox" class="filled-in" />
-                        <span><i class="material-icons">train</i></span>
-                      </label>
-                      <label class="m-r-2">
-                        <input type="checkbox" class="filled-in" />
-                        <span><i class="material-icons">flight</i></span>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="filled-in" />
-                        <span
-                          ><i class="material-icons">directions_boat</i></span
-                        >
-                      </label>
+                    <div class="valign-wrapper center-align row">
+                      <div class="col s2">
+                        <label style="display: flex; border: red 1px solid">
+                          <input type="checkbox" class="filled-in" />
+                          <span></span
+                          ><i class="material-icons">directions_car</i>
+                        </label>
+                      </div>
+                      <div class="col s2">
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span
+                            ><i class="material-icons">directions_bus</i></span
+                          >
+                        </label>
+                      </div>
+                      <div class="col s2">
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span><i class="material-icons">train</i></span>
+                        </label>
+                      </div>
+                      <div class="col s2">
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span><i class="material-icons">flight</i></span>
+                        </label>
+                      </div>
+                      <div class="col s2">
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span
+                            ><i class="material-icons">directions_boat</i></span
+                          >
+                        </label>
+                      </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
@@ -329,7 +338,7 @@
                     href="#!"
                     class="right modal-close waves-effect waves-green btn-flat"
                   >
-                    X
+                    <i class="tiny material-icons">close</i>
                   </a>
                 </div>
                 <div class="blue-text text-darken-2 row" id="contentAccount">
@@ -392,18 +401,18 @@
       </div>
     </nav>
 
-    <div id="modal2" class="modal">
+    <div id="chatPerso" class="modal">
       <div class="modal-content blue-text text-darken-2 right-align">
-        <div class="af">
+        <div class="af row">
+          <h5 class="center-align col s10">Liste des amis</h5>
           <a
-            class="waves-effect waves-light btn modal-trigger blue darken-2"
+            class="waves-effect waves-light btn modal-trigger blue darken-2 right col s2"
             href="#NewFriendModal"
           >
             <i class="material-icons">person_add</i>
           </a>
         </div>
-        <div>
-          <h5 class="center-align">Liste des amis</h5>
+        <div id="listAmis">
           <div class="listeAmi">
             <div class="list" id="newFriend" style="display: none">
               <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
@@ -419,7 +428,7 @@
             </div>
             <div class="list">
               <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
-              <p>Dorothe</p>
+              <p>Camille Honnete</p>
               <div class="msg">
                 <a
                   class="waves-effect waves-light btn modal-trigger blue darken-2"
@@ -438,14 +447,18 @@
       <div class="modal-content blue-text text-darken-2">
         <div>
           <h5 class="center-align">Ajouter un compagnon</h5>
-          <form class="col s12">
-            <div class="row">
+          <form class="col s12" style="border: solid 1px red; max-height: 20px">
+            <div class="row" style="border: solid 1px red; max-height: 20px">
               <div class="input-field col s4 offset-s3">
                 <input id="searchtraveler" type="text" class="validate" />
                 <label for="searchtraveler">Nom, pseudo, adresse e-mail</label>
               </div>
-              <div class="input-field col s2">
+              <div
+                class="input-field col s2"
+                style="border: solid 1px red; max-height: 20px"
+              >
                 <a
+                  style="border: solid 1px red; max-height: 20px"
                   id="btn-add-traveler"
                   class="waves-effect waves-light btn blue darken-1"
                   ><i class="material-icons center-align"
@@ -456,6 +469,18 @@
             </div>
           </form>
           <div>
+            <div class="list">
+              <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
+              <p>Jean Bon</p>
+              <div class="msg">
+                <a
+                  class="waves-effect waves-light btn modal-trigger blue darken-2"
+                  onclick="M.toast({html: 'Demande envoyée'})"
+                >
+                  <i class="tiny material-icons">add</i>
+                </a>
+              </div>
+            </div>
             <div class="list">
               <img src="images/pp1.jpeg" alt="" class="circle" height="50px" />
               <p>Jean Bon</p>
@@ -488,13 +513,12 @@
       </div>
     </div>
 
-    <div id="ChatModal" class="modal">
+    <div id="ChatModal" class="modal indigo lighten-4">
       <div class="modal-content blue-text text-darken-2 right-align">
         <a class="modal-close waves-effect waves-blue btn-flat">
           <i class="tiny material-icons">close</i>
         </a>
         <div>
-          <!-- <h5 class="center-align">Chatting box</h5> -->
           <div class="chatlist">
             <div class="chat">
               <div class="chatheader valign-wrapper">
@@ -504,7 +528,7 @@
                   class="circle"
                   height="40px"
                 />
-                <p>Jean Bon</p>
+                <p>Paul Emploi</p>
               </div>
               <p>Here is a chatting message from friend.</p>
             </div>
@@ -522,14 +546,19 @@
               <p>Here is a chatting message from user.</p>
             </div>
           </div>
-          <div class="input-field">
-            <input type="text" id="chat_input" placeholder="Message ..." />
+          <div class="input-field row" style="padding: 5px">
+            <input
+              type="text"
+              id="chat_input2"
+              placeholder="Message ..."
+              class="col s11"
+            />
             <button
-              class="btn waves-effect waves-light blue"
+              class="btn waves-effect waves-light blue col s1"
               type="submit"
               name="action"
             >
-              Envoyer
+              <i class="material-icons">send</i>
             </button>
           </div>
         </div>
@@ -725,7 +754,7 @@
                     <!-- Modal trigger comment -->
                     <a
                       href="#modalComment"
-                      class="waves-effect waves-light btn blue darken-2  modal-trigger"
+                      class="waves-effect waves-light btn blue darken-2 modal-trigger"
                     >
                       <i class="material-icons">comment</i></a
                     >
@@ -819,9 +848,7 @@
                       height="50px"
                     />
                     <p>Jean Bon</p>
-                    <div class="commentaire">
-                      Super, blablabla
-                    </div>
+                    <div class="commentaire">Super, blablabla</div>
                   </div>
                   <div class="list-comment">
                     <img
@@ -831,9 +858,7 @@
                       height="50px"
                     />
                     <p>Jean Bon</p>
-                    <div class="commentaire">
-                      Super, blablabla
-                    </div>
+                    <div class="commentaire">Super, blablabla</div>
                   </div>
                   <div class="list-comment">
                     <img
@@ -843,9 +868,7 @@
                       height="50px"
                     />
                     <p>Jean Bon</p>
-                    <div class="commentaire">
-                      Super, blablabla
-                    </div>
+                    <div class="commentaire">Super, blablabla</div>
                   </div>
                   <div class="list-comment">
                     <img
@@ -855,9 +878,7 @@
                       height="50px"
                     />
                     <p>Jean Bon</p>
-                    <div class="commentaire">
-                      Super, blablabla
-                    </div>
+                    <div class="commentaire">Super, blablabla</div>
                   </div>
                   <div class="list-comment" id="newComment">
                     <img
@@ -867,14 +888,16 @@
                       height="50px"
                     />
                     <p>Vous</p>
-                    <div class="commentaire">
-                      Super, blablabla
-                    </div>
+                    <div class="commentaire">Super, blablabla</div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field">
-                    <input type="text" id="comment_input" placeholder="Commentaire ..." />
+                    <input
+                      type="text"
+                      id="comment_input"
+                      placeholder="Commentaire ..."
+                    />
                     <button
                       class="btn waves-effect waves-light blue"
                       type="submit"
@@ -929,9 +952,9 @@
         <div id="modal-join-travel" class="modal">
           <div class="modal-content blue-text text-darken-2">
             <h5 class="center-align">Rejoindre un voyage</h5>
-            <form class="col s12">
+            <form class="col s12" style="max-height: 60px">
               <div class="row">
-                <div class="input-field col s4 offset-s3">
+                <div class="input-field col s6 offset-s3">
                   <input id="traveler" type="text" class="validate" />
                   <label for="traveler" class="blue-text text-darken-2"
                     >Nom du groupe, destination, membre du groupe</label
@@ -980,7 +1003,7 @@
 
         <div id="groupInfoPlus" class="modal">
           <div class="modal-content" id="modal-content">
-            <div class="panel" id="left-panel">
+            <div class="panel indigo lighten-4" id="left-panel">
               <div id="dmGroup">
                 <div class="headerChatGroup">
                   <div class="imgGroup">
@@ -1025,7 +1048,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="chatlist">
+                <div class="chatlistGroup">
                   <div class="chat">
                     <div class="chatheader valign-wrapper">
                       <img
@@ -1080,7 +1103,7 @@
                   <input
                     class="col s10"
                     type="text"
-                    id="chat_input"
+                    id="chat_input1"
                     placeholder="Message ..."
                   />
                   <button
