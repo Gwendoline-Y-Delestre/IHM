@@ -246,6 +246,17 @@
   padding-left: 3%;
 }
 
+.list-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  width: 100%;
+  height: 70px;
+  background-color: #b6d6ff;
+  padding-left: 3%;
+}
+
+
 .list p {
   width: 40%;
   font-size: medium;
@@ -463,4 +474,23 @@ td {
 
 input::placeholder {
   color: #2e2f3a;
+}
+
+.commentaire{
+  position: absolute;
+  right:10%;
+  padding-left:5%;
+  padding-right:5%;
+  background-color: white;
+  border-radius : 10px;
+  width:60%;
+  height:5%;
+}
+
+#newComment{
+  display: none;
+}
+
+.modal{
+  border-radius: 10px;
 }

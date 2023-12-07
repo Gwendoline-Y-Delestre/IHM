@@ -53,6 +53,10 @@ function newPost() {
   document.getElementById("newPost").hidden=false;
 }
 
+function newComment() {
+  document.getElementById("newComment").style.display='flex';
+}
+
 
 
 document.getElementById('btn-add').addEventListener('click', function() {

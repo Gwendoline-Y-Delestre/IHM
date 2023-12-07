@@ -110,7 +110,7 @@
                 <div class="row">
                   <form class="col s12">
                     <div class="row">
-                      <div class="input-field col s6">
+                      <div class="input-field col s8">
                         <input id="titreVoyage" type="text" class="validate" />
                         <label
                           for="titreVoyage"
@@ -118,16 +118,12 @@
                           >Titre du voyage*</label
                         >
                       </div>
-                      <div class="col s2">
+                      <div class="switch left-align">
                         <label>
-                          <input name="group1" type="radio" checked />
-                          <span>Public</span>
-                        </label>
-                      </div>
-                      <div class="col s2">
-                        <label>
-                          <input name="group1" type="radio" />
-                          <span>Privé</span>
+                          Publique
+                          <input type="checkbox" />
+                          <span class="lever"></span>
+                          Privé
                         </label>
                       </div>
                     </div>
@@ -726,9 +722,10 @@
               <div id="rsbutton">
                 <ul class="right">
                   <li>
+                    <!-- Modal trigger comment -->
                     <a
-                      href="#"
-                      class="waves-effect waves-light btn blue darken-2"
+                      href="#modalComment"
+                      class="waves-effect waves-light btn blue darken-2  modal-trigger"
                     >
                       <i class="material-icons">comment</i></a
                     >
@@ -810,10 +807,90 @@
                 </ul>
               </div>
             </div>
+            <div id="modalComment" class="modal">
+              <div class="modal-content">
+                <h4 class="blue-text text-darken-2">Commentaires</h4>
+                <div class="row">
+                  <div class="list-comment">
+                    <img
+                      src="images/pp1.jpeg"
+                      alt=""
+                      class="circle"
+                      height="50px"
+                    />
+                    <p>Jean Bon</p>
+                    <div class="commentaire">
+                      Super, blablabla
+                    </div>
+                  </div>
+                  <div class="list-comment">
+                    <img
+                      src="images/pp1.jpeg"
+                      alt=""
+                      class="circle"
+                      height="50px"
+                    />
+                    <p>Jean Bon</p>
+                    <div class="commentaire">
+                      Super, blablabla
+                    </div>
+                  </div>
+                  <div class="list-comment">
+                    <img
+                      src="images/pp1.jpeg"
+                      alt=""
+                      class="circle"
+                      height="50px"
+                    />
+                    <p>Jean Bon</p>
+                    <div class="commentaire">
+                      Super, blablabla
+                    </div>
+                  </div>
+                  <div class="list-comment">
+                    <img
+                      src="images/pp1.jpeg"
+                      alt=""
+                      class="circle"
+                      height="50px"
+                    />
+                    <p>Jean Bon</p>
+                    <div class="commentaire">
+                      Super, blablabla
+                    </div>
+                  </div>
+                  <div class="list-comment" id="newComment">
+                    <img
+                      src="images/pp1.jpeg"
+                      alt=""
+                      class="circle"
+                      height="50px"
+                    />
+                    <p>Vous</p>
+                    <div class="commentaire">
+                      Super, blablabla
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field">
+                    <input type="text" id="comment_input" placeholder="Commentaire ..." />
+                    <button
+                      class="btn waves-effect waves-light blue"
+                      type="submit"
+                      name="action"
+                      onclick="newComment()"
+                    >
+                      Envoyer
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="group" class="col s3 pink lighten-4">
+      <div id="group" class="col s3 indigo lighten-4">
         <ul class="collection">
           <a class="modal-trigger" href="#groupInfoPlus">
             <li class="collection-item avatar">
