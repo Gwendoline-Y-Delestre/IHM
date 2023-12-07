@@ -127,6 +127,21 @@
                         </label>
                       </div>
                     </div>
+
+                    <div class="row center">
+                      <p>Choisir une photo</p>
+                      <div class="col s6">
+                        <img src="images/st.png" width="200px" />
+                      </div>
+                      <div class="col s6 center-align">
+                        <a
+                          id="btn-select-photos"
+                          class="waves-effect waves-light btn blue darken-2"
+                          ><i class="material-icons left">get_app</i>Importer
+                          une autre photo
+                        </a>
+                      </div>
+                    </div>
                     <div class="row">
                       <div class="input-field col s12">
                         <input id="LieuVoyage" type="text" class="validate" />
@@ -312,7 +327,7 @@
 
             <!-- Modal Structure -->
             <div id="accountModal" class="modal">
-              <div class="modal-content" style="overflow-y: auto">
+              <div class="modal-content">
                 <div class="row" id="headerAccount">
                   <div class="blue-text text-darken-2 col s8">
                     <div>
@@ -447,18 +462,14 @@
       <div class="modal-content blue-text text-darken-2">
         <div>
           <h5 class="center-align">Ajouter un compagnon</h5>
-          <form class="col s12" style="border: solid 1px red; max-height: 20px">
-            <div class="row" style="border: solid 1px red; max-height: 20px">
+          <form class="col s12">
+            <div class="row">
               <div class="input-field col s4 offset-s3">
                 <input id="searchtraveler" type="text" class="validate" />
                 <label for="searchtraveler">Nom, pseudo, adresse e-mail</label>
               </div>
-              <div
-                class="input-field col s2"
-                style="border: solid 1px red; max-height: 20px"
-              >
+              <div class="input-field col s2">
                 <a
-                  style="border: solid 1px red; max-height: 20px"
                   id="btn-add-traveler"
                   class="waves-effect waves-light btn blue darken-1"
                   ><i class="material-icons center-align"
@@ -891,20 +902,21 @@
                     <div class="commentaire">Super, blablabla</div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="input-field">
+                <div class="">
+                  <div class="input-field row">
                     <input
                       type="text"
                       id="comment_input"
                       placeholder="Commentaire ..."
+                      class="col s11"
                     />
                     <button
-                      class="btn waves-effect waves-light blue"
+                      class="btn waves-effect waves-light blue col s1"
                       type="submit"
                       name="action"
                       onclick="newComment()"
                     >
-                      Envoyer
+                      <i class="material-icons">send</i>
                     </button>
                   </div>
                 </div>
