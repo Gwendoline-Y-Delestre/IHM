@@ -30,9 +30,10 @@
             >
               <span
                 id="notification-badge"
-                class="new badge red"
+                class="badge red"
                 style="display: none"
-              ></span>
+                >1</span
+              >
               <i class="tiny material-icons">group</i>
             </a>
           </li>
@@ -297,9 +298,99 @@
         </ul>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="#" class="waves-effect waves-light btn blue darken-2">
-              <i class="material-icons">person</i>
-            </a>
+            <!-- Modal Trigger -->
+            <a
+              class="waves-effect waves-light btn blue darken-2 modal-trigger"
+              href="#accountModal"
+              ><i class="material-icons">person</i></a
+            >
+
+            <!-- Modal Structure -->
+            <div id="accountModal" class="modal">
+              <div class="modal-content">
+                <div class="row" id="headerAccount">
+                  <div class="blue-text text-darken-2 col s8">
+                    <div>
+                      <img
+                        src="images/st.png"
+                        alt=""
+                        class="circle col s1 vLign"
+                      />
+                    </div>
+                    <div class="col s4">
+                      <h3>Hanna Nas</h3>
+                      <h6>3 Amis</h6>
+                    </div>
+
+                    <a
+                      href="#!"
+                      class="modal-close waves-effect waves-green btn-flat"
+                      ><i class="material-icons">edit</i></a
+                    >
+                  </div>
+
+                  <a
+                    href="#!"
+                    class="right modal-close waves-effect waves-green btn-flat"
+                  >
+                    X
+                  </a>
+                </div>
+                <div class="blue-text text-darken-2 row" id="contentAccount">
+                  <div id="map" class="col s6">
+                    <img src="images/MapChart_Map.png" alt="" />
+                  </div>
+                  <div id="infoAccount" class="col s6">
+                    <table id="userInfo">
+                      <tbody>
+                        <tr>
+                          <td>Langue :</td>
+                          <td>Francais, English</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Age :</td>
+                          <td>22 ans</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Email :</td>
+                          <td>HannaNas@gmail.com</td>
+                          <td><i class="material-icons">lock</i></td>
+                        </tr>
+                        <tr>
+                          <td>Tel :</td>
+                          <td>07 00 00 00 00</td>
+                          <td><i class="material-icons">lock</i></td>
+                        </tr>
+                        <tr>
+                          <td>Activé notification :</td>
+                          <td>
+                            <div class="switch">
+                              <label>
+                                Non
+                                <input type="checkbox" />
+                                <span class="lever"></span>
+                                Oui
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div id="myPosts" class="row">
+                  <img class="mypost col s3" src="images/thailande.jpg" />
+
+                  <img class="mypost col s3" src="images/thailande.jpg" />
+
+                  <img class="mypost col s3" src="images/thailande.jpg" />
+
+                  <img class="mypost col s3" src="images/thailande.jpg" />
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

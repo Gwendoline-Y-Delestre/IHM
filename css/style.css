@@ -324,7 +324,21 @@
   height: 16%;
   width: 16%;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+#myPosts > a {
+  height: 15%;
+  width: 16%;
+  padding: 0;
+}
+
+.mypost {
+  margin-left: 5%;
+}
+
 #photos,
 #select-photos,
 #btn-loc-friend {
@@ -349,11 +363,6 @@
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
-}
-#photos > a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .btn-share-travel {
@@ -390,4 +399,35 @@
 .modal-close {
   background-color: #1976d2;
   color: white;
+}
+#accountModal {
+  width: 1400px !important;
+  width: 55%;
+}
+#contentAccount {
+  border-bottom: #1976d2 1px solid;
+  border-top: #1976d2 1px solid;
+  margin: 0;
+}
+
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  max-width: 100%;
+}
+
+#myPosts {
+  margin-top: 2%;
+  align-items: center;
+}
+
+.vLign h3 {
+  vertical-align: middle;
+}
+
+.vLign h6 {
+  vertical-align: bottom;
 }
