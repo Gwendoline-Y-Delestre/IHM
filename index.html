@@ -451,7 +451,7 @@
             </div>
             <div class="list">
               <img src="images/user.jpg" alt="" class="circle" height="50px" />
-              <p>Camille Honnete</p>
+              <p>Paul Emploi</p>
               <div class="msg">
                 <a
                   class="waves-effect waves-light btn modal-trigger blue darken-2"
@@ -626,11 +626,11 @@
               </div>
               <div class="row" id="btn-loc-friend">
                 <a
-                  class="waves-effect waves-light btn blue darken-2 col s3 offset-s2"
+                  class="waves-effect waves-light btn blue darken-2 col s2 offset-s3"
                   ><i class="material-icons left">maps</i>Lieu</a
                 >
                 <a
-                  class="waves-effect waves-light btn blue darken-2 col s3 offset-s2 modal-trigger"
+                  class="waves-effect waves-light btn blue darken-2 col s3 offset-s1 modal-trigger"
                   href="#modal-compagnon"
                   ><i class="material-icons left">add</i>Compagnon</a
                 >
@@ -642,7 +642,7 @@
                   class="col s8 offset-s1 blue-text text-darken-2"
                   >Dites comment ça c'est passé :</label
                 >
-                <textarea id="description-textarea" class="col s8 offset-s1">
+                <textarea id="description-textarea" class="col s10 offset-s1">
                   Vacances paradisiaques au bout du monde !
                 </textarea>
               </div>
@@ -844,7 +844,7 @@
             <div id="modalComment" class="modal">
               <div class="modal-content">
                 <h4 class="blue-text text-darken-2">Commentaires</h4>
-                <div class="row">
+                <div class="row size_comment">
                   <div class="list-comment">
                     <img
                       src="images/user.jpg"
@@ -947,6 +947,23 @@
               </p>
             </li>
           </a>
+
+          <a
+            id="newGroupLondres"
+            class="modal-trigger"
+            href="#groupInfoPlus"
+            hidden
+          >
+            <li class="collection-item avatar">
+              <img src="images/st.png" alt="" class="circle" />
+              <span class="title">Londres :D</span>
+              <p class="groupInfo">
+                <i class="tiny material-icons">location_on</i> Londres
+                <br />
+                <i class="tiny material-icons">people</i> Paul, Camille
+              </p>
+            </li>
+          </a>
         </ul>
 
         <!--Modal-join-travel-trigger-->
@@ -987,9 +1004,9 @@
                   <ul class="collection">
                     <li class="collection-item avatar">
                       <img src="images/st.png" alt="" class="circle" />
-                      <span class="title">Paris :D</span>
+                      <span class="title">Londres </span>
                       <p class="groupInfo">
-                        <i class="tiny material-icons">location_on</i> Paris
+                        <i class="tiny material-icons">location_on</i> Londres
                         <br />
                         <i class="tiny material-icons">people</i> Paul, Camille
                       </p>
@@ -999,7 +1016,7 @@
                 <div>
                   <a
                     class="waves-effect waves-light btn modal-trigger blue darken-2 modal-close"
-                    onclick="NewGroup(), M.toast({html: 'Demande envoyée'})"
+                    onclick="M.toast({html: 'Demande envoyée'})"
                   >
                     <i class="tiny material-icons" id="btn-voyage">add</i>
                   </a>

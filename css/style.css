@@ -118,6 +118,7 @@
 }
 .transportInfo {
   margin-left: 5%;
+  width: 40%;
 }
 .groupDMhead ul {
   display: flex;
@@ -516,4 +517,8 @@ input::placeholder {
 
 p {
   padding-left: 3%;
+}
+
+.size_comment {
+  min-height: 450px;
 }
