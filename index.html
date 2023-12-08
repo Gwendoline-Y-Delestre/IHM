@@ -118,12 +118,17 @@
                   <form class="col s12">
                     <div class="row">
                       <div class="input-field col s8">
-                        <input id="titreVoyage" type="text" class="validate" />
-                        <label
+                        <input
+                          id="titreVoyage"
+                          type="text"
+                          class="validate"
+                          placeholder="Titre du voyage *"
+                        />
+                        <!-- <label
                           for="titreVoyage"
                           class="active blue-text text-darken-2"
                           >Titre du voyage*</label
-                        >
+                        > -->
                       </div>
                       <div class="switch left-align">
                         <label>
@@ -151,12 +156,17 @@
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="LieuVoyage" type="text" class="validate" />
-                        <label
+                        <input
+                          id="LieuVoyage"
+                          type="text"
+                          class="validate"
+                          placeholder="Destination"
+                        />
+                        <!-- <label
                           for="LieuVoyage"
                           class="active blue-text text-darken-2"
                           >Destination</label
-                        >
+                        > -->
                       </div>
                     </div>
                     <div id="loc-etape" class="row" hidden>
@@ -165,12 +175,13 @@
                           id="textarea-etape"
                           type="text"
                           class="validate"
+                          placeholder="1ère étape"
                         />
-                        <label
+                        <!-- <label
                           for="textarea-etape"
                           class="active blue-text text-darken-2"
                           >1ère étape</label
-                        >
+                        > -->
                       </div>
                     </div>
                     <div class="row" id="add-etape">
@@ -187,24 +198,26 @@
                           id="departure_date"
                           type="text"
                           class="datepicker"
+                          placeholder="Date de départ"
                         />
-                        <label
+                        <!-- <label
                           for="departure_date"
                           class="blue-text text-darken-2"
-                          >Date de départ</label
-                        >
+                          ></label
+                        > -->
                       </div>
                       <div class="input-field col s6">
                         <input
                           id="arrival_date"
                           type="text"
                           class="datepicker"
+                          placeholder="Date d'arrivée"
                         />
-                        <label
+                        <!-- <label
                           for="arrival_date"
                           class="blue-text text-darken-2"
                           >Date d'arrivée</label
-                        >
+                        > -->
                       </div>
                     </div>
                     <!-- Modal Trigger -->
@@ -263,20 +276,26 @@
                           id="price_per_person"
                           type="text"
                           class="validate"
+                          placeholder="Prix par personne"
                         />
-                        <label
+                        <!-- <label
                           for="price_per_person"
                           class="blue-text text-darken-2"
                           >Prix par personne</label
-                        >
+                        > -->
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="resa" type="text" class="validate" />
-                        <label for="resa" class="blue-text text-darken-2"
+                        <input
+                          id="resa"
+                          type="text"
+                          class="validate"
+                          placeholder="Numéro de réservation"
+                        />
+                        <!-- <label for="resa" class="blue-text text-darken-2"
                           >Numéro de réservation</label
-                        >
+                        > -->
                       </div>
                     </div>
                     <div class="row">
@@ -285,24 +304,35 @@
                           id="travel_date"
                           type="text"
                           class="datepicker"
+                          placeholder="Date"
                         />
-                        <label for="travel_date" class="blue-text text-darken-2"
+                        <!-- <label for="travel_date" class="blue-text text-darken-2"
                           >Date</label
-                        >
+                        > -->
                       </div>
                       <div class="input-field col s4">
-                        <input id="travel_hour" type="text" class="validate" />
-                        <label for="travel_hour" class="blue-text text-darken-2"
+                        <input
+                          id="travel_hour"
+                          type="text"
+                          class="validate"
+                          placeholder="Heure"
+                        />
+                        <!-- <label for="travel_hour" class="blue-text text-darken-2"
                           >Heure</label
-                        >
+                        > -->
                       </div>
                       <div class="input-field col s4">
-                        <input id="travel_place" type="text" class="validate" />
-                        <label
+                        <input
+                          id="travel_place"
+                          type="text"
+                          class="validate"
+                          placeholder="Lieu"
+                        />
+                        <!-- <label
                           for="travel_place"
                           class="blue-text text-darken-2"
                           >Lieu</label
-                        >
+                        > -->
                       </div>
                     </div>
                   </form>
@@ -625,10 +655,19 @@
                 </div>
               </div>
               <div class="row" id="btn-loc-friend">
-                <a
+                <!-- <a
+                  href=""
                   class="waves-effect waves-light btn blue darken-2 col s2 offset-s3"
                   ><i class="material-icons left">maps</i>Lieu</a
-                >
+                > -->
+
+                <input
+                  type="text"
+                  id="autocomplete-input"
+                  class="autocomplete col s4 offset-s2"
+                  placeholder="Lieu"
+                />
+                <label for="autocomplete-input"></label>
                 <a
                   class="waves-effect waves-light btn blue darken-2 col s3 offset-s1 modal-trigger"
                   href="#modal-compagnon"
@@ -643,7 +682,6 @@
                   >Dites comment ça c'est passé :</label
                 >
                 <textarea id="description-textarea" class="col s10 offset-s1">
-                  Vacances paradisiaques au bout du monde !
                 </textarea>
               </div>
             </div>
@@ -980,10 +1018,15 @@
             <form class="col s12" style="max-height: 60px">
               <div class="row">
                 <div class="input-field col s6 offset-s3">
-                  <input id="traveler" type="text" class="validate" />
-                  <label for="traveler" class="blue-text text-darken-2"
+                  <input
+                    id="traveler"
+                    type="text"
+                    class="validate"
+                    placeholder="Nom du groupe, destination, membre du groupe"
+                  />
+                  <!-- <label for="traveler" class="blue-text text-darken-2"
                     >Nom du groupe, destination, membre du groupe</label
-                  >
+                  > -->
                 </div>
                 <div class="input-field col s2">
                   <a

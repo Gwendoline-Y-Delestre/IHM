@@ -522,3 +522,7 @@ p {
 .size_comment {
   min-height: 450px;
 }
+
+textarea::placeholder {
+  color: #444;
+}

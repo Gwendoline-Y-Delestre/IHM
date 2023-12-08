@@ -50,16 +50,16 @@ function NewGroup() {
 }
 
 function newPost() {
-  document.getElementById("newPost").hidden=false;
+  document.getElementById("newPost").hidden = false;
 }
 
 function newComment() {
-  document.getElementById("newComment").style.display='flex';
+  document.getElementById("newComment").style.display = 'flex';
 }
 
 
 
-document.getElementById('btn-add').addEventListener('click', function() {
+document.getElementById('btn-add').addEventListener('click', function () {
   var badge = document.getElementById('notification-badge');
   badge.style.display = 'block';
 
@@ -67,21 +67,37 @@ document.getElementById('btn-add').addEventListener('click', function() {
   friend.style.display = 'flex';
 
   var modals = document.querySelectorAll('.modal');
-  modals.forEach(function(modal) {
-      var instance = M.Modal.getInstance(modal);
-      instance.close();
+  modals.forEach(function (modal) {
+    var instance = M.Modal.getInstance(modal);
+    instance.close();
   });
 
 });
 
 
-document.getElementById('btn-friend').addEventListener('click', function() {
+document.getElementById('btn-friend').addEventListener('click', function () {
   var badge = document.getElementById('notification-badge');
   badge.style.display = 'none';
 });
 
 
-document.getElementById('btn-search-travel').addEventListener('click', function() {
+document.getElementById('btn-search-travel').addEventListener('click', function () {
   var travel = document.getElementById('new-travel');
   travel.style.display = 'block';
+});
+
+$(document).ready(function () {
+  $('input.autocomplete').autocomplete({
+    data: {
+      "Tailhand": null,
+      "Paris": null,
+      "Londres": null
+    },
+  });
+});
+
+instance.updateData({
+  "Tailhand": null,
+  "Paris": null,
+  "Londres": null
 });
